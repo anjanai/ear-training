@@ -9,9 +9,10 @@
     <script src="ear-training.js"></script>
   </head>
   <body>
+    <div class="wrapper">
     <div class="container  p-3 my-3 border">
     <audio id=tanpura loop>
-      <source src="http://www.swarmanttra.com/wp-content/uploads/2015/03/Kali-1-Csharp-G-Pancham.mp3" type="audio/wav">
+      <source src="Kali-1-Csharp-G-Pancham.mp3" type="audio/wav">
     </audio>
 
     <button type="button" class="btn btn-primary" onclick="tanpura()">Tanpura On/off</button>
@@ -28,6 +29,7 @@
       <button  type="button" class="btn btn-info" id=start onclick="next()">Start</button>
       <button  type="button" class="btn btn-warning" id="repeat" onclick="repeat()">Replay note</button>
       <div  id="quiz">
+	<a class="trigger_popup_subset">Click here to create subset of notes</a>
       </br>
       </div>
     </div>
@@ -35,7 +37,7 @@
     <div class="container p-3">
       <h1>Scoresheet</h1>
       <span id=correct> <p>Number correct: 0/0</p> </span>
-	    
+      </div>
     </div>
   </body>
 </html>
