@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title> Ear-training </title>
+    <script src="https://unpkg.com/tone"></script>
+    <script src="https://unpkg.com/jquery"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css">
+    <script src="ear-training.js"></script>
+  </head>
+  <body>
+    <div class="container  p-3 my-3 border">
+    <audio id=tanpura loop>
+      <source src="http://www.swarmanttra.com/wp-content/uploads/2015/03/Kali-1-Csharp-G-Pancham.mp3" type="audio/wav">
+    </audio>
+
+    <button type="button" class="btn btn-primary" onclick="tanpura()">Tanpura On/off</button>
+
+    
+    <div class="container p-3" id="hear">
+      <h2>Press any note to hear it.</h2>
+    </div>
+    
+    
+
+    <div class="container p-3">
+      <h1>Quiz</h1>
+      <button  type="button" class="btn btn-info" id=start onclick="next()">Start</button>
+      <button  type="button" class="btn btn-warning" id="repeat" onclick="repeat()">Replay note</button>
+      <div  id="quiz">
+      </br>
+      </div>
+    </div>
+
+    <div class="container p-3">
+      <h1>Scoresheet</h1>
+      <span id=correct> <p>Number correct: 0/0</p> </span>
+	    
+    </div>
+  </body>
+</html>
