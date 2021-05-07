@@ -16,20 +16,18 @@ var attempts = {};
 
 $(document).ready(function () {
     $("#repeat").hide();
-    let div = $("#hear");
-    let quiz = $("#quiz");
-    div.on('click', "input", function() {
-	playnote(notemap[this.id]);
-    });
-    quiz.on('click', "input", function() {
-	checknote(this, notemap[this.id]);
-    });
-    
     for (let i in srgm) {
-	let button = $('<input type="button" id="' + srgm[i] + '" value="' + srgm[i] + '">');
-	button.width(60);
-	div.append(button);
-	button.clone().appendTo(quiz);
+	let b = $('<button/>', {
+	    text: srgm[i],
+	    id: srgm[i],
+	    click: function () { playnote(notemap[this.id]); }
+	});
+	b.addClass("swar");
+	$("#hear").append(b);
+
+	b2 = b.clone();
+	b2.click (function() { checknote(this, notemap[this.id]); });
+	$("#quiz").append(b2);
     }
 });
 

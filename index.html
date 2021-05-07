@@ -7,37 +7,47 @@
     <script src="https://unpkg.com/jquery"></script>
     <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css">
     <script src="ear-training.js"></script>
+    <link rel="stylesheet" href="ear-training.css">
   </head>
   <body>
     <div class="wrapper">
-    <div class="container  p-3 my-3 border">
-    <audio id=tanpura loop>
-      <source src="Kali-1-Csharp-G-Pancham.mp3" type="audio/wav">
-    </audio>
+      <header class="header">
+	<big>Ear Training </big>
+      </header>
+      
+      <article class="content">
+	<audio id=tanpura loop>
+	  <source src="Kali-1-Csharp-G-Pancham.mp3" type="audio/wav">
+	</audio>
+	
+	<button type="button" class="btn btn-primary" onclick="tanpura()">Tanpura On/off</button>
+	<button  type="button" class="btn btn-info" id=start onclick="next()">Start Quiz</button>
+	<button  type="button" class="btn btn-warning" id="repeat" onclick="repeat()">Replay note</button>
+	<p></p>
+	<div class="container"  id="quiz"></div>
+	<a class="trigger_popup_subset">Click here to use a subset of notes</a>
+      </article>
 
-    <button type="button" class="btn btn-primary" onclick="tanpura()">Tanpura On/off</button>
+      <aside class="sidebar">
+	 <big>Scoresheet</big>
+	 <span id=correct> <p>Number correct: 0/0</p> </span>
+      </aside>
 
-    
-    <div class="container p-3" id="hear">
-      <h2>Press any note to hear it.</h2>
-    </div>
-    
-    
-
-    <div class="container p-3">
-      <h1>Quiz</h1>
-      <button  type="button" class="btn btn-info" id=start onclick="next()">Start</button>
-      <button  type="button" class="btn btn-warning" id="repeat" onclick="repeat()">Replay note</button>
-      <div  id="quiz">
-	<a class="trigger_popup_subset">Click here to create subset of notes</a>
-      </br>
+      <div class="hover_bkgr_subset">
+	<span class="helper"></span>
+	<div>
+          <div class="popupCloseButton">&times;</div>
+	  Click on any note to include/exclude it.
+	  <div id=popup_swaras></div>
+	  <p></p>
+	  <button onClick="createSubset()">Apply</button> 
+	</div>
       </div>
-    </div>
 
-    <div class="container p-3">
-      <h1>Scoresheet</h1>
-      <span id=correct> <p>Number correct: 0/0</p> </span>
-      </div>
+      <footer class="footer">
+	Press any note to hear it.
+	<span id="hear"></span>
+      </footer>
     </div>
   </body>
 </html>
