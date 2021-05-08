@@ -150,5 +150,6 @@ function createSubset() {
 	}
     });
     localStorage.setItem('removeNotes', remove_notes);
+    $('.hover_bkgr_subset').hide();
 }
 
