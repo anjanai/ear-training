@@ -11,6 +11,8 @@ const notemap =  abcd.reduce(function(notemap, field, index) {
   return notemap;
 }, {})
 
+var scores = {};
+
 var lastnote = "";
 var num_correct = num_total = 0;
 var got_note = false;
@@ -122,17 +124,35 @@ function repeat() {
 
 function checknote(button) {
     let note = $(button).attr('id');
-    console.log (lastnote, note);
     num_attempts ++;
-    if (lastnote == note && num_attempts == 1) num_correct++;
-    $("#correct").html("<p>Number correct: " + num_correct + "/" + num_total + "</p>");
 
     let color = (lastnote == note? 'limegreen' : 'red');
 	
     $(button).css('background-color', color);
 
     window.setTimeout(function(){
-	if (lastnote == note) next();
+	if (lastnote == note) {
+	    if (!(note in scores)) {
+		scores[note] =  {
+		    quizzed: 0,
+		    correct: 0
+		}
+	    }
+	    scores[note].quizzed++;
+	    console.log (scores);
+	    if (num_attempts == 1) {
+		num_correct++;
+		scores[note].correct ++;
+	    }
+	    let html = "<p>Number correct: " + num_correct + "/" + num_total + "</p>";
+	    html += "<ul>"
+	    jQuery.each(scores, function(key, el) {
+		html += "<li> " + key + ": " + el.correct + "/" + el.quizzed + "</li>";
+	    });
+	    html+="</ul>";
+	    $("#correct").html(html);
+	    next();
+	} 
     }, 900);
     
 
