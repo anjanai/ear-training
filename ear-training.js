@@ -158,6 +158,14 @@ function checknote(button) {
 
 }
 
+
+function randomSubset() {
+    remove_notes = [];
+    $("#popup_swaras button").each(function() {
+	if (Math.random() < .5) togglenote(this);
+    });
+}
+
 function createSubset() {
     remove_notes = [];
     $("#popup_swaras button").each(function() {
