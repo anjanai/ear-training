@@ -19,6 +19,7 @@ var attempts = {};
 var remove_notes;
 
 $(document).ready(function () {
+    $("#datemod").html(document.lastModified);
     remove_notes = localStorage.getItem('removeNotes');
     if (remove_notes === null) remove_notes = 'r,g,M,d,n'.split(',');
     
