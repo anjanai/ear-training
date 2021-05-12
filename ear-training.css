@@ -35,6 +35,14 @@ h1, p {
 button.swar {
     border-radius: 22px;
     padding: 18px;
+    background-color: #ffcc;
+}
+
+
+button.btn {
+    border-radius: 22px;
+    padding: 8px;
+    background-color: #666699;
 }
 
 @media screen and (min-width: 500px) {
@@ -135,5 +143,5 @@ button.swar {
     display: inline-block;
     font-weight: bold;
     text-decoration: underline;
-    color: #700;
+    color: #666699;
 }
