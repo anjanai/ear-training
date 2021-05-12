@@ -6,21 +6,20 @@
     <script src="https://unpkg.com/tone"></script>
     <script src="https://unpkg.com/jquery"></script>
     <script>
-    const synth = new Tone.Synth().toDestination();
-    const sampler = new Tone.Sampler({
-    urls: {
-	A4: "A4.ogg",
-	C4: "C4.ogg",
-	'D#4': "Ds4.ogg",
-	'F#4': "Fs4.ogg",
-    },
-    baseUrl: "https://tonejs.github.io/audio/salamander/"
-    }).toDestination();
-
-
-    function playtone(note) {
-    sampler.triggerAttackRelease("A4", "2n");
-    }
+      var sampler = new Tone.Sampler({
+	  urls: {
+	      A4: "A4.ogg",
+	      C4: "C4.ogg",
+	      'D#4': "Ds4.ogg",
+		  'F#4': "Fs4.ogg",
+	  },
+	  baseUrl: "https://tonejs.github.io/audio/salamander/"
+      }).toDestination();
+      sampler.context._context.resume() // necessary for Safari
+      
+      function playtone(note) {
+	  sampler.triggerAttackRelease("A4", "2n");
+      }
     </script>
 
   </head>
