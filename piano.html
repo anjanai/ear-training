@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sampler</title>
+  <script src="https://tonejs.github.io/build/Tone.js"></script>
+</head>
+<body>
+  <button onClick="playtone()">Play</button> 
+
+  <script type="text/javascript">
+    function playtone(note) {
+	sampler.triggerAttackRelease("A0");
+    }
+    const sampler = new Tone.Sampler({
+	urls: {
+	    A0: "A0.mp3",
+	    C1: "C1.mp3",
+	    "D#1": "Ds1.mp3",
+	    "F#1": "Fs1.mp3",
+	},
+	release: 1,
+	baseUrl: "https://tonejs.github.io/audio/salamander/"
+    }).toDestination();
+  </script>
+
+</body>
+</html>
