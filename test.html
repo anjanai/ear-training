@@ -6,32 +6,19 @@
     <script src="https://unpkg.com/tone"></script>
     <script src="https://unpkg.com/jquery"></script>
     <script>
-      var sampler;
-
-      function sleep(ms) {
-	  return new Promise(resolve => setTimeout(resolve, ms));
-      }
-
-      function createSampler() {
-	  var sampler = new Tone.Sampler({
-	      urls: {
-		  'A4': "A4.ogg",
-		  'C4': "C4.ogg",
-		  'D#4': "Ds4.ogg",
-		  'F#4': "Fs4.ogg",
-	      },
-	      baseUrl: "https://tonejs.github.io/audio/salamander/",
-	      onload: () => { console.log ("loaded"); }
-	  }).toDestination();
-	  sampler.context._context.resume() // necessary for Safari
-	  return sampler;
-      }
-
+      const sampler = new Tone.Sampler({
+	  urls: {
+	      A4: "A4.ogg",
+	      C4: "C4.ogg",
+	      'D#4': "Ds4.ogg",
+	      'F#4': "Fs4.ogg",
+	  },
+	  release: 1,
+	  baseUrl: "https://tonejs.github.io/audio/salamander/",
+      }).toDestination();
       
-      async function playtone(note) {
-	  if (!sampler) sampler = createSampler();
-	  while (!sampler.loaded) await sleep(200);
-	  sampler.triggerAttackRelease("A4", "2n");
+      function playtone(note) {
+	  sampler.triggerAttackRelease("A4");
       }
     </script>
 
