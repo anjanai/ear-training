@@ -79,7 +79,6 @@ function togglenote (note) {
 
 function tanpura() {
     let tanpura = $('#tanpura')[0];
-    tanpura.volume = 0.1;
     tanpura[tanpura.paused ? 'play' : 'pause']();
 }
 
