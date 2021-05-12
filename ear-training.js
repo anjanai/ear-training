@@ -1,8 +1,6 @@
 const yellow = 'rgb(255, 255, 0)';
 const gray = 'rgb(239, 239, 239)';
 
-const synth = new Tone.Synth().toDestination();
-
 const srgm = "s r R g G m M P d D n N S".split(' ');
 const abcd = "C#4 D4 D#4 E4     F4 F#4 G4 G#4   A4 A#4 B4 C5 C#5".split(/\s+/);
 
@@ -88,10 +86,10 @@ function tanpura() {
 
 const sampler = new Tone.Sampler({
     urls: {
-	A4: "A4.ogg",
-	C4: "C4.ogg",
-	'D#4': "Ds4.ogg",
-	'F#4': "Fs4.ogg",
+	A4: "A4.mp3",
+	C4: "C4.mp3",
+	'D#4': "Ds4.mp3",
+	'F#4': "Fs4.mp3",
     },
     baseUrl: "https://tonejs.github.io/audio/salamander/"
 }).toDestination();
