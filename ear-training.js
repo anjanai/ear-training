@@ -1,5 +1,5 @@
 const yellow = 'rgb(255, 255, 0)';
-const gray = 'rgb(239, 239, 239)';
+const gray = 'rgb(128, 128, 128)';
 
 const srgm = "s r R g G m M P d D n N S".split(' ');
 const abcd = "C#4 D4 D#4 E4     F4 F#4 G4 G#4   A4 A#4 B4 C5 C#5".split(/\s+/);
@@ -51,7 +51,7 @@ $(document).ready(function () {
 	    id: 'A' + srgm[i],
 	    click: function () { togglenote(this); }
 	});
-	b.addClass("swar");
+	b.addClass("popup_swar");
 	$("#popup_swaras").append(b);
     }
 
@@ -59,7 +59,7 @@ $(document).ready(function () {
     jQuery.each(remove_notes, function(i, id) {
 	$("#"+id).hide();
 	$("#A"+id).css({
-	    'background-color': yellow,
+	    'background-color': gray,
 	    'text-decoration': 'line-through'
 	});
     });
@@ -67,13 +67,15 @@ $(document).ready(function () {
     
 });
 
+String.prototype.firstWord = function(){return this.replace(/\s.*/,'')}
+
 function togglenote (note) {
-    color = $(note).css('background-color');
-    if (color == gray) $( note ).css({
-	'background-color': yellow,
+    dec = $(note).css('text-decoration').firstWord();
+    if (dec  !== 'line-through') $( note ).css({
+	'background-color': gray,
 	'text-decoration': 'line-through'
     }); else $( note ).css({
-	'background-color': gray,
+	'background-color': yellow,
 	'text-decoration': 'none'
     });
 }
@@ -156,9 +158,26 @@ function checknote(button) {
 
 }
 
+function sel_none() {
+    $("#popup_swaras button").each(function() {
+	$(this).css({
+	    'background-color': gray,
+	    'text-decoration': 'line-through'
+	});
+    });
+}
 
+
+function sel_all() {
+    $("#popup_swaras button").each(function() {
+	$(this).css({
+	    'background-color': yellow,
+	    'text-decoration': 'none'
+	});
+    });
+}
+    
 function randomSubset() {
-    remove_notes = [];
     $("#popup_swaras button").each(function() {
 	if (Math.random() < .5) togglenote(this);
     });
@@ -168,7 +187,7 @@ function createSubset() {
     remove_notes = [];
     $("#popup_swaras button").each(function() {
 	id = $(this).attr('id').substring(1);
-	if ($(this).css("background-color") === yellow) {
+	if ($(this).css("background-color") === gray) {
 	    $("#"+id).hide();
 	    remove_notes.push(id);
 	} else {

@@ -38,6 +38,12 @@ button.swar {
     background-color: #ffcc;
 }
 
+button.popup_swar {
+    border-radius: 22px;
+    padding: 18px;
+    background-color: #ffff00;
+}
+
 
 button.btn {
     border-radius: 22px;
