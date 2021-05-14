@@ -5,24 +5,10 @@
     <title> Ear-training </title>
     <script src="https://unpkg.com/tone"></script>
     <script src="https://unpkg.com/jquery"></script>
-    <script>
-      const sampler = new Tone.Sampler({
-	  urls: {
-	      A4: "A4.mp3",
-	      C4: "C4.mp3",
-	      'D#4': "Ds4.mp3",
-	      'F#4': "Fs4.mp3",
-	  },
-	  baseUrl: "https://tonejs.github.io/audio/salamander/",
-      }).toDestination();
-      
-      function playtone(note) {
-	  sampler.triggerAttackRelease("A4");
-      }
-    </script>
-
   </head>
   <body>
-    <button onClick="playtone()">Play</button> 
+    <audio id=tanpura loop controls>
+      <source src="Kali-1-Csharp-G-Pancham_low-volume.mp3" type="audio/wav">
+    </audio>
   </body>
 </html>
