@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title> Ear-training: Phrases </title>
+    <script src="https://unpkg.com/tone"></script>
+    <script src="https://unpkg.com/jquery"></script>
+    
+    <script src="phrases.js"></script>
+    <link rel="stylesheet" href="ear-training.css">
+    <link rel="stylesheet" href="phrases.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+	
+	<big>Ear Training: Phrases </big>
+
+      </header>
+      
+      <article class="content">
+	<audio id=tanpura loop>
+	  <source src="Kali-1-Csharp-G-Pancham_low-volume.mp3">
+	</audio>
+
+	<select name="raag"  class="select-css" id="raag-select">
+	</select>
+
+	<button type="button" class="btn" onclick="tanpura()">Tanpura On/off</button>
+	<button  type="button" class="btn" id=start onclick="start()">Start Quiz</button>
+	<button  type="button" class="btn" id="repeat" onclick="repeat()">Replay note</button>
+	<p></p>
+	<div class="container"  id="quiz"></div>
+      </article>
+
+      <aside class="sidebar">
+	 <big>Scoresheet</big>
+	 <span id=correct> <p>Number correct: 0/0</p> </span>
+      </aside>
+
+      <footer class="footer">
+	<p>Press any note to hear it.</p>
+	<div id="hear"></div>
+	<p style="text-align:right;">Last modified: <span id="datemod">mmddyy</span></p>
+      </footer>
+
+      
+
+    </div>
+  </body>
+</html>
