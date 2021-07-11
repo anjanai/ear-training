@@ -6,20 +6,21 @@ const srgm =
       `,m ,M ,P ,d ,D ,n ,N
 s r R g    G m M P   d D n N
 s' r' R' g' G' m' M' P'`.split(/\s+/);
-const abcd =
-                    `F#3 G3 G#3   A3 A#3 B3 C4
-C#4 D4 D#4 E4     F4 F#4 G4 G#4   A4 A#4 B4 C5
-C#5 D5 D#5 E5     F5 F#5 G5 G#5`.split(/\s+/);
+
+
+// use C# as Sa
+const abcd = `,^F ,G ,^G ,A ,^A ,B C 
+^C D ^D    E F ^F G    ^G A ^A B c 
+^c d ^d    e f ^f g    ^g`.split(/\s+/);
 
 const notemap =  abcd.reduce(function(notemap, field, index) {
   notemap[srgm[index]] = field;
   return notemap;
 }, {})
 
-console.log (notemap);
 var scores = {};
 
-var lastnote = "";
+var lastnotes = "";
 var num_correct = num_total = 0;
 var got_note = false;
 var num_attempts = 0;
@@ -36,9 +37,21 @@ var raag_phrases = {
     
 }
 
+var selected_raag;
+
+
+function convert_notation (notes) {
+    let abc = "Q: 1/4=100\n";
+
+    for (let i = 0; i < notes.length; i++)
+	abc += ( notemap[notes[i]] || notes[i] );
+    return abc;
+}
+
 
 
 function useRaag (raag) {
+    selected_raag = raag;
     $("#quiz").empty();
     $("#hear").empty();
     
@@ -70,7 +83,7 @@ function useRaag (raag) {
 	let b = $('<button/>', {
 	    text: note,
 	    id: note,
-	    click: function () { playnote(this.id); }
+	    click: function () { playphrase(this.id); }
 	});
 	b.addClass("swar");
 	$("#hear").append(b);
@@ -104,18 +117,6 @@ function tanpura() {
     tanpura[tanpura.paused ? 'play' : 'pause']();
 }
 
-
-const sampler = new Tone.Sampler({
-    urls: {
-	A4: "A4.mp3",
-	C4: "C4.mp3",
-	'D#4': "Ds4.mp3",
-	'F#4': "Fs4.mp3",
-    },
-    baseUrl: "https://tonejs.github.io/audio/salamander/"
-}).toDestination();
-
-
 function start() {
     $("#repeat").show();
     $("#start").hide();
@@ -124,21 +125,43 @@ function start() {
 
 function next() {
     $("#quiz").children().css('background-color', 'linen');
-    lastnote = active[Math.floor(Math.random() * active.length)];
-    playnote(lastnote);
-    num_total++;
+    let active = raag_phrases[selected_raag].split(';');
+    let phrase = active[Math.floor(Math.random() * active.length)].trim().split(/\s+/);
+    console.log (phrase);
+    playphrase (convert_notation(phrase));
+
     got_note = false;
     num_attempts = 0;
 }
 
-function playnote(note) {
-    console.log (notemap[note]);
-    sampler.triggerAttackRelease(notemap[note], "2n");
-
+function playphrase(notes) {
+    lastnotes = notes;
+    
+    var visualObj = ABCJS.renderAbc("*", notes)[0];
+    
+    // This object is the class that will contain the buffer
+    var midiBuffer;
+    var audioContext = new window.AudioContext();
+    audioContext.resume().then(function () {
+	midiBuffer = new ABCJS.synth.CreateSynth();
+	
+	return midiBuffer.init({
+	    visualObj: visualObj,
+	    audioContext: audioContext
+	}).then(function (response) {
+	    return midiBuffer.prime();
+	}).then(function () {
+	    midiBuffer.start();
+	    return Promise.resolve();
+	}).catch(function (error) {
+	    alert("synth error", error);
+	});
+    });
 }
 
 function repeat() {
-    playnote(lastnote);
+    playphrase(lastnotes);
+    console.log (lastnotes);
 }
 
 function checknote(button) {
