@@ -60,43 +60,47 @@ function useRaag (raag) {
     $("#start").show();
     
     var scale = raag_scales[raag].split(' ');
-    let higher = [];
-    let lower = [];
-    console.log (scale);
+    let octaves = {};
+    octaves.mid = scale;
+    octaves.higher = [];
+    octaves.lower = [];
+
+
     for (const note of scale) {
 	if ("mp".includes(note.toLowerCase())) {
-	    higher.push(note + "'");
-	    lower.push("," + note);
+	    octaves.higher.push(note + "'");
+	    octaves.lower.push("," + note);
 	} else if ("srg".includes(note.toLowerCase())) {
-	    higher.push(note + "'");
+	    octaves.higher.push(note + "'");
 	} else {
-	    lower.push("," + note);
+	    octaves.lower.push("," + note);
 	}
     }
-    scale = lower.concat(scale).concat(higher);
-    for (const note of scale) {
-	if (note === 'S') {
-	    $("#quiz").append(" (lower octave) <br>");
-	    $("#hear").append(" (lower octave) <br>");
+
+    let d = document.createElement('div');
+    for (let octave of "higher mid lower".split(' ')) {
+	let div = document.createElement('div');
+	$(div).append(octave);
+	for (const note of octaves[octave]) {
+	    let b = $('<button/>', {
+		text: note,
+		id: note,
+		class: "swar",
+		click: function () { checknote(this); }
+	    });
+	    $(div).append(b);
 	}
-	if (note === "S'") {
-	    $("#quiz").append("<br> (higher octave)");
-	    $("#hear").append("<br> (higher octave)");
-	}
-
-	let b = $('<button/>', {
-	    text: note,
-	    id: note,
-	    click: function () { playphrase(convert_notation(this.id)); }
-	});
-	b.addClass("swar");
-	$("#hear").append(b);
-
-	b2 = b.clone();
-	b2.click (function() { checknote(this); });
-	$("#quiz").append(b2);
-
+	$(div).appendTo(d);
+	
     }
+        
+    $(d).appendTo("#quiz");
+    $(d).clone().appendTo("#hear");
+
+    $("#hear").find("button").click (function() {
+	playphrase(convert_notation(this.id));
+    });
+    
 }
 
 $(document).ready(function () {
@@ -132,7 +136,7 @@ var current_phrase;
 var current_abc;
 
 function next() {
-    $("#quiz").children().css('background-color', 'linen');
+    $("#quiz").find("button").css('background-color', 'linen');
     let active = raag_phrases[selected_raag].split(';');
     let phrase = active[Math.floor(Math.random() * active.length)].trim().split(/\s+/);
     // phrase = ",D ,N S";
@@ -176,7 +180,7 @@ function repeat() {
 var correct_so_far = "";
 
 function reset() {
-    $("#quiz").children().css('background-color', 'white');
+    $("#quiz").find("button").css('background-color', 'white');
     correct_so_far = "";
     num_correct = 0;
 }
@@ -186,7 +190,7 @@ function checknote(button) {
     let note = $(button).attr('id');
     let correct_note = current_phrase[num_correct];
 
-    $("#quiz").children().css('background-color', 'white');
+    $("#quiz").find("button").css('background-color', 'white');
     let color = (correct_note === note? 'limegreen' : 'red');
 	
     $(button).css('background-color', color);
