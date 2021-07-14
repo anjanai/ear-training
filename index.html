@@ -12,7 +12,8 @@
   <body>
     <div class="wrapper">
       <header class="header">
-	<big>Ear Training </big>
+	<big>Ear Training: Hindustani music notes </big>
+	<a class="alignright" href=phrases.html>Ear Training: Raag phrases</a>
       </header>
       
       <article class="content">
@@ -20,12 +21,13 @@
 	  <source src="Kali-1-Csharp-G-Pancham_low-volume.mp3">
 	</audio>
 	
-	<button type="button" class="btn btn-primary" onclick="tanpura()">Tanpura On/off</button>
-	<button  type="button" class="btn btn-info" id=start onclick="start()">Start Quiz</button>
-	<button  type="button" class="btn btn-warning" id="repeat" onclick="repeat()">Replay note</button>
+	<button class="btn" onclick="tanpura()">Tanpura On/off</button>
+	<button class="btn" id=start onclick="start()">Start Quiz</button>
+	<button class="btn" id="repeat" onclick="repeat()">Replay note</button>
+	<button class="btn" onclick=popupNotes()>Change notes</button>
 	<p></p>
 	<div class="container"  id="quiz"></div>
-	<a class="trigger_popup_subset">Click here to use a subset of notes</a>
+	
       </article>
 
       <aside class="sidebar">
@@ -48,13 +50,14 @@
       </div>
 
       <footer class="footer">
-	Press any note to hear it.
+	Press any note to hear it.</br>
 	<span id="hear"></span>
-	<p style="text-align:right;">Last modified: <span id="datemod">mmddyy</span></p>
       </footer>
-
+      
       
 
     </div>
+    	<small  class="alignright">Last modified: <span id="datemod">mmddyy</small></p>
+
   </body>
 </html>

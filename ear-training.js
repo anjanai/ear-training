@@ -18,14 +18,14 @@ var num_attempts = 0;
 var attempts = {};
 var remove_notes;
 
+function popupNotes () {
+    $('.hover_bkgr_subset').show(); 
+}
+
 $(document).ready(function () {
     $("#datemod").html(document.lastModified);
     remove_notes = localStorage.getItem('removeNotes');
     if (remove_notes === null) remove_notes = 'r,g,M,d,n'.split(',');
-    
-    $(".trigger_popup_subset").click(function(){
-       $('.hover_bkgr_subset').show();
-    });
     
     $('.popupCloseButton').click(function(){
         $('.hover_bkgr_subset').hide();
@@ -104,7 +104,7 @@ function start() {
 }
 
 function next() {
-    $("#quiz").children().css('background-color', 'linen');
+    $("#quiz").children().css('background-color', 'beige');
     let active = srgm.filter(x => !remove_notes.includes(x));
     lastnote = active[Math.floor(Math.random() * active.length)];
     playnote(lastnote);

@@ -35,7 +35,7 @@ h1, p {
 button.swar {
     border-radius: 22px;
     padding: 18px;
-    background-color: #ffcc;
+    background-color: beige;
 }
 
 button.popup_swar {
@@ -109,6 +109,11 @@ button.btn {
     height:100%;
     vertical-align:middle;
 }
+
+#quiz {
+    min-height: 160px;
+}
+
 .hover_bkgr_subset > div {
     background-color: #fff;
     box-shadow: 10px 10px 60px #555;
@@ -151,3 +156,8 @@ button.btn {
     text-decoration: underline;
     color: #666699;
 }
+
+.alignright {
+    float: right;
+}
+

@@ -106,7 +106,10 @@ function useRaag (raag) {
 $(document).ready(function () {
     for (let raag in raag_scales) {
 	$("#raag-select").append(new Option(raag, raag));
+	raag_phrases[raag] = raag_phrases[raag].split(';')
+	    .filter(a => a!="").map(a => a.trim().split(/\s+/));
     }
+    console.log (raag_phrases);
     $("#datemod").html(document.lastModified);
     
     $( "#raag-select" ).change(function() {
@@ -136,9 +139,9 @@ var current_phrase;
 var current_abc;
 
 function next() {
-    $("#quiz").find("button").css('background-color', 'linen');
-    let active = raag_phrases[selected_raag].split(';');
-    let phrase = active[Math.floor(Math.random() * active.length)].trim().split(/\s+/);
+    $("#quiz").find("button").css('background-color', 'lilac');
+    let active = raag_phrases[selected_raag];
+    let phrase = active[Math.floor(Math.random() * active.length)];
     // phrase = ",D ,N S";
     let len = phrase.length;
     current_phrase = phrase;
@@ -180,7 +183,7 @@ function repeat() {
 var correct_so_far = "";
 
 function reset() {
-    $("#quiz").find("button").css('background-color', 'white');
+    $("#quiz").find("button").css('background-color', 'lilac');
     correct_so_far = "";
     num_correct = 0;
 }
@@ -190,7 +193,7 @@ function checknote(button) {
     let note = $(button).attr('id');
     let correct_note = current_phrase[num_correct];
 
-    $("#quiz").find("button").css('background-color', 'white');
+    $("#quiz").find("button").css('background-color', 'beige');
     let color = (correct_note === note? 'limegreen' : 'red');
 	
     $(button).css('background-color', color);
