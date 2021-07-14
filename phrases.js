@@ -1,7 +1,3 @@
-
-const yellow = 'rgb(255, 255, 0)';
-const gray = 'rgb(128, 128, 128)';
-
 const srgm =
            `,m ,M ,P ,d ,D ,n ,N
 S r R g    G m M P   d D n N
@@ -18,16 +14,6 @@ const notemap =  abcd.reduce(function(notemap, field, index) {
   return notemap;
 }, {})
 
-var raag_scales = {
-    yaman: "S R G M P D N",
-    kalavati: "S G P D n",
-};
-
-var raag_phrases = {
-    yaman : `N R ; ,N R G ; ,N R ,N G ; R G ; ,N M G R S ; ,N R G ; M R G M P ; M D P ; M D N ; M D M N ; G M G ; N D P ; M R G ; ,N R S ; ,D ,N ,D S ; ,D ,N R G   ; ,N R G ; G R G ; ,N R ,N G ; ,N R G M R M G ; G R M G ; M P ; G M P R S   ; ,N R S ; ,N R G M P ; M P M P ; P M D P M P ; M D M N ; N D P ; M G ; G M D N  M D N ; N D P M G R  S ; ,N R S `,
-    kalavati : `S G P D ; G P D ; P D P S' ; n D D ; n D P ; G P D ; G D P ; G P G S ; ,n ,D S ;`,
-    
-}
 
 var selected_raag;
 
@@ -59,7 +45,7 @@ function useRaag (raag) {
     $("#repeat").hide();
     $("#start").show();
     
-    var scale = raag_scales[raag].split(' ');
+    var scale = raag_scales[raag].trim().split(' ');
     let octaves = {};
     octaves.mid = scale;
     octaves.higher = [];
@@ -104,12 +90,15 @@ function useRaag (raag) {
 }
 
 $(document).ready(function () {
-    for (let raag in raag_scales) {
+    for (let raag of raags) {
 	$("#raag-select").append(new Option(raag, raag));
-	raag_phrases[raag] = raag_phrases[raag].split(';')
-	    .filter(a => a!="").map(a => a.trim().split(/\s+/));
+	raag_phrases[raag] = raag_phrases[raag].replace(/\([^)]*\) */g, "")
+	    .split(';')
+	    .filter(a => a!="")
+	    .map(a => a.trim().split(/\s+/)
+				   );
     }
-    console.log (raag_phrases);
+    console.log (raag_phrases.jog[14]);
     $("#datemod").html(document.lastModified);
     
     $( "#raag-select" ).change(function() {
@@ -117,6 +106,7 @@ $(document).ready(function () {
     });
     
     useRaag("yaman");
+    $("#raag-select").val("yaman");
     $("#repeat").hide();
  
 });
@@ -139,10 +129,10 @@ var current_phrase;
 var current_abc;
 
 function next() {
-    $("#quiz").find("button").css('background-color', 'lilac');
+    $("#quiz").find("button").css('background-color', 'beige');
     let active = raag_phrases[selected_raag];
     let phrase = active[Math.floor(Math.random() * active.length)];
-    // phrase = ",D ,N S";
+    //phrase = ",D ,N S".split(' ');
     let len = phrase.length;
     current_phrase = phrase;
     console.log (phrase);
@@ -183,7 +173,7 @@ function repeat() {
 var correct_so_far = "";
 
 function reset() {
-    $("#quiz").find("button").css('background-color', 'lilac');
+    $("#quiz").find("button").css('background-color', 'beige');
     correct_so_far = "";
     num_correct = 0;
 }
@@ -193,7 +183,7 @@ function checknote(button) {
     let note = $(button).attr('id');
     let correct_note = current_phrase[num_correct];
 
-    $("#quiz").find("button").css('background-color', 'beige');
+    $("#quiz").find("button").css('background-color','beige');
     let color = (correct_note === note? 'limegreen' : 'red');
 	
     $(button).css('background-color', color);

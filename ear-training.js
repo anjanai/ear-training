@@ -1,6 +1,3 @@
-const yellow = 'rgb(255, 255, 0)';
-const gray = 'rgb(128, 128, 128)';
-
 const srgm = "s r R g G m M P d D n N S".split(' ');
 const abcd = "C#4 D4 D#4 E4     F4 F#4 G4 G#4   A4 A#4 B4 C5 C#5".split(/\s+/);
 
@@ -59,7 +56,7 @@ $(document).ready(function () {
     jQuery.each(remove_notes, function(i, id) {
 	$("#"+id).hide();
 	$("#A"+id).css({
-	    'background-color': gray,
+	    'background-color': 'gray',
 	    'text-decoration': 'line-through'
 	});
     });
@@ -72,10 +69,10 @@ String.prototype.firstWord = function(){return this.replace(/\s.*/,'')}
 function togglenote (note) {
     dec = $(note).css('text-decoration').firstWord();
     if (dec  !== 'line-through') $( note ).css({
-	'background-color': gray,
+	'background-color': 'gray',
 	'text-decoration': 'line-through'
     }); else $( note ).css({
-	'background-color': yellow,
+	'background-color': 'yellow',
 	'text-decoration': 'none'
     });
 }
@@ -161,7 +158,7 @@ function checknote(button) {
 function sel_none() {
     $("#popup_swaras button").each(function() {
 	$(this).css({
-	    'background-color': gray,
+	    'background-color': 'gray',
 	    'text-decoration': 'line-through'
 	});
     });
@@ -171,7 +168,7 @@ function sel_none() {
 function sel_all() {
     $("#popup_swaras button").each(function() {
 	$(this).css({
-	    'background-color': yellow,
+	    'background-color': 'yellow',
 	    'text-decoration': 'none'
 	});
     });
@@ -187,7 +184,7 @@ function createSubset() {
     remove_notes = [];
     $("#popup_swaras button").each(function() {
 	id = $(this).attr('id').substring(1);
-	if ($(this).css("background-color") === gray) {
+	if ($(this).css("background-color") === 'gray') {
 	    $("#"+id).hide();
 	    remove_notes.push(id);
 	} else {
