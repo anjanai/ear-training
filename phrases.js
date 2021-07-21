@@ -43,6 +43,7 @@ function useRaag (raag) {
     $("#quiz").empty();
     $("#hear").empty();
     $("#repeat").hide();
+    $("#skip").hide();
     $("#start").show();
     
     var scale = raag_scales[raag].trim().split(' ');
@@ -108,6 +109,7 @@ $(document).ready(function () {
     useRaag("yaman");
     $("#raag-select").val("yaman");
     $("#repeat").hide();
+    $("#skip").hide();
  
 });
 
@@ -120,6 +122,7 @@ function tanpura() {
 
 function start() {
     $("#repeat").show();
+    $("#skip").show();
     $("#start").hide();
     next();
 }
@@ -168,6 +171,11 @@ function playphrase(notes) {
 
 function repeat() {
     playphrase(current_abc);
+}
+
+function skip() {
+    reset();
+    next();
 }
 
 var correct_so_far = "";
