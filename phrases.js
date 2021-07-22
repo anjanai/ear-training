@@ -93,11 +93,13 @@ function useRaag (raag) {
 $(document).ready(function () {
     for (let raag of raags) {
 	$("#raag-select").append(new Option(raag, raag));
-	raag_phrases[raag] = raag_phrases[raag].replace(/\([^)]*\) */g, "")
+	raag_phrases[raag] = raag_phrases[raag].replace(/’/g,"'")
+	    .replace(/\([^)]*\) */g, "")
 	    .split(';')
 	    .filter(a => a!="")
 	    .map(a => a.trim().split(/\s+/)
-				   );
+		);
+	//console.log(raag_phrases[raag]);
     }
     console.log (raag_phrases.jog[14]);
     $("#datemod").html(document.lastModified);
