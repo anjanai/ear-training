@@ -13,7 +13,7 @@ var num_correct = num_total = 0;
 var got_note = false;
 var num_attempts = 0;
 var attempts = {};
-var remove_notes;
+var remove_notes = [];
 
 function popupNotes () {
     $('.hover_bkgr_subset').show(); 
@@ -22,6 +22,7 @@ function popupNotes () {
 $(document).ready(function () {
     $("#datemod").html(document.lastModified);
     remove_notes = localStorage.getItem('removeNotes');
+    console.log (remove_notes);
     if (remove_notes === null) remove_notes = 'r,g,M,d,n'.split(',');
     
     $('.popupCloseButton').click(function(){
@@ -54,31 +55,20 @@ $(document).ready(function () {
 
     remove_notes = remove_notes.split(',');
     jQuery.each(remove_notes, function(i, id) {
+	if (!id) return;
 	$("#"+id).hide();
-	$("#A"+id).css({
-	    'background-color': 'gray',
-	    'text-decoration': 'line-through'
-	});
+	$("#A"+id).removeClass("popup_swar").addClass("swar_remove");
     });
 
     
 });
 
-String.prototype.firstWord = function(){return this.replace(/\s.*/,'')}
-
 function togglenote (note) {
-    dec = $(note).css('text-decoration').firstWord();
-    if (dec  !== 'line-through') $( note ).css({
-	'background-color': 'gray',
-	'text-decoration': 'line-through'
-    }); else $( note ).css({
-	'background-color': 'yellow',
-	'text-decoration': 'none'
-    });
+    note.className = (note.className == "popup_swar") ? "swar_remove" : "popup_swar";
 }
 
 function tanpura() {
-    let tanpura = $('#tanpura')[0];
+   let tanpura = $('#tanpura')[0];
     tanpura[tanpura.paused ? 'play' : 'pause']();
 }
 
@@ -157,20 +147,14 @@ function checknote(button) {
 
 function sel_none() {
     $("#popup_swaras button").each(function() {
-	$(this).css({
-	    'background-color': 'gray',
-	    'text-decoration': 'line-through'
-	});
+	$(this).removeClass("popup_swar").addClass("swar_remove");
     });
 }
 
 
 function sel_all() {
     $("#popup_swaras button").each(function() {
-	$(this).css({
-	    'background-color': 'yellow',
-	    'text-decoration': 'none'
-	});
+	$(this).addClass("popup_swar").removeClass("swar_remove");
     });
 }
     
@@ -183,8 +167,8 @@ function randomSubset() {
 function createSubset() {
     remove_notes = [];
     $("#popup_swaras button").each(function() {
-	id = $(this).attr('id').substring(1);
-	if ($(this).css("background-color") === 'gray') {
+	let id = $(this).attr('id').substring(1);
+	if (this.className === "swar_remove") {
 	    $("#"+id).hide();
 	    remove_notes.push(id);
 	} else {

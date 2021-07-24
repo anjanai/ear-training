@@ -6,6 +6,13 @@
     background: linear-gradient( #666699,#e5e5e5);
 }
 
+.select-css * {
+    border-radius: 22px;
+    padding: 8px;
+    background: linear-gradient( #666699,#e5e5e5);
+}
+
+
 .current {
     color: gold;
 }

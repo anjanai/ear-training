@@ -51,6 +51,16 @@ button.btn {
     background: linear-gradient( #666699,#e5e5e5);
 }
 
+.swar_remove {
+    border-radius: 22px;
+    padding: 18px;
+    background-color: gray;
+    text-decoration: line-through;
+}
+
+
+
+
 @media screen and (min-width: 500px) {
 
   /* no grid support? */
