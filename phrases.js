@@ -90,6 +90,11 @@ function useRaag (raag) {
     
 }
 
+function random() {
+    const raag = raags[raags.length * Math.random() | 0];
+    $( "#raag-select" ).val(raag);
+}
+
 $(document).ready(function () {
     for (let raag of raags) {
 	$("#raag-select").append(new Option(raag, raag));
@@ -101,7 +106,6 @@ $(document).ready(function () {
 		);
 	//console.log(raag_phrases[raag]);
     }
-    console.log (raag_phrases.jog[14]);
     $("#datemod").html(document.lastModified);
     
     $( "#raag-select" ).change(function() {
