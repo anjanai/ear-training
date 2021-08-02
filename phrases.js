@@ -40,6 +40,7 @@ function convert_notation (notes) {
 
 function useRaag (raag) {
     selected_raag = raag;
+    alert(raag);
     $("#quiz").empty();
     $("#hear").empty();
     $("#repeat").hide();
@@ -92,8 +93,7 @@ function useRaag (raag) {
 
 function random() {
     const raag = raags[raags.length * Math.random() | 0];
-    $( "#raag-select" ).val(raag);
-    useRaag(raag);
+    $( "#raag-select" ).val(raag).change();
 }
 
 $(document).ready(function () {
