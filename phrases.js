@@ -40,7 +40,6 @@ function convert_notation (notes) {
 
 function useRaag (raag) {
     selected_raag = raag;
-    alert(raag);
     $("#quiz").empty();
     $("#hear").empty();
     $("#repeat").hide();
