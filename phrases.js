@@ -93,6 +93,7 @@ function useRaag (raag) {
 function random() {
     const raag = raags[raags.length * Math.random() | 0];
     $( "#raag-select" ).val(raag);
+    useRaag(raag);
 }
 
 $(document).ready(function () {
