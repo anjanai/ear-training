@@ -138,8 +138,8 @@ function start() {
 }
 
 function reveal() {
-    let note = $("#" + current_phrase[num_correct]);
-    $(note).css('background-color', "yellow");
+    document.getElementById( current_phrase[num_correct]).style.background =
+	"yellow";
 }
 
 var num_correct = 0;
