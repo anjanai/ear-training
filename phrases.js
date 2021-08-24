@@ -32,7 +32,8 @@ function convert_notation (notes) {
     abc = abc.replaceAll("---", "4");
     abc = abc.replaceAll("--", "3");
     abc = abc.replaceAll("-", "2");
-    
+
+    console.log (abc);
     return abc;
 }
 
@@ -104,8 +105,9 @@ $(document).ready(function () {
 	    .filter(a => a!="")
 	    .map(a => a.trim().split(/\s+/)
 		);
-	//console.log(raag_phrases[raag]);
     }
+    //console.log(raag_phrases["gopika_basant"][10]);
+
     $("#datemod").html(document.lastModified);
     
     $( "#raag-select" ).change(function() {
@@ -116,6 +118,7 @@ $(document).ready(function () {
     $("#raag-select").val("yaman");
     $("#repeat").hide();
     $("#skip").hide();
+    $("#reveal").hide();
  
 });
 
@@ -129,8 +132,14 @@ function tanpura() {
 function start() {
     $("#repeat").show();
     $("#skip").show();
+    $("#reveal").show();
     $("#start").hide();
     next();
+}
+
+function reveal() {
+    let note = $("#" + current_phrase[num_correct]);
+    $(note).css('background-color', "yellow");
 }
 
 var num_correct = 0;
@@ -141,7 +150,8 @@ function next() {
     $("#quiz").find("button").css('background-color', 'beige');
     let active = raag_phrases[selected_raag];
     let phrase = active[Math.floor(Math.random() * active.length)];
-    //phrase = ",D ,N S".split(' ');
+    //phrase = "gm Pm g S";
+    //phrase = phrase.split().join(' ');
     let len = phrase.length;
     current_phrase = phrase;
     console.log (phrase);
