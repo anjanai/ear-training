@@ -15,7 +15,7 @@ const notemap =  abcd.reduce(function(notemap, field, index) {
 }, {})
 
 
-var selected_raag;
+var selected_raag, scale;
 
 
 function convert_notation (notes) {
@@ -47,7 +47,7 @@ function useRaag (raag) {
     $("#skip").hide();
     $("#start").show();
     
-    var scale = raag_scales[raag].trim().split(' ');
+    scale = raag_scales[raag].trim().split(' ');
     let octaves = {};
     octaves.mid = scale;
     octaves.higher = [];
@@ -150,11 +150,14 @@ function next() {
     $("#quiz").find("button").css('background-color', 'beige');
     let active = raag_phrases[selected_raag];
     let phrase = active[Math.floor(Math.random() * active.length)];
+    console.log (phrase);
     //phrase = "gm Pm g S";
     //phrase = phrase.split().join(' ');
     let len = phrase.length;
     current_phrase = phrase;
-    console.log (phrase);
+    let letters = phrase.join('').match(/[A-Za-z]/g);
+    let diff = letters.filter(x => !scale.includes(x) );
+    if (diff.length) alert("Unexpected swar in phrase: " + phrase);
     current_abc = convert_notation(phrase);
     playphrase (current_abc);
 
