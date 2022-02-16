@@ -164,13 +164,14 @@ function next() {
     $("#current").html("&block; ".repeat(len));
     
 }
+var visualObj;
+var audioContext = new window.AudioContext();
+// This object is the class that will contain the buffer
+var midiBuffer;
 
 function playphrase(notes) {
-    var visualObj = ABCJS.renderAbc("*", notes)[0];
+    visualObj = ABCJS.renderAbc("*", notes)[0];
     
-    // This object is the class that will contain the buffer
-    var midiBuffer;
-    var audioContext = new window.AudioContext();
     audioContext.resume().then(function () {
 	midiBuffer = new ABCJS.synth.CreateSynth();
 	
