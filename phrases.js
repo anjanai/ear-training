@@ -19,7 +19,7 @@ var selected_raag, scale;
 
 
 function convert_notation (notes) {
-    let abc = "Q: 50\n";	// tempo
+    let abc = "Q: 50\n%%MIDI program 2\n";	// tempo
 
     let note = '';
     for (let i = 0; i < notes.length; i++) {
