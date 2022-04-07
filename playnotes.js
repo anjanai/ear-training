@@ -50,8 +50,25 @@ function convert_notation (note) {
     return abc;
 }
 
-function createButtons() {
-    scale = "S r R g G m M P d D n N".trim().split(' ');
+let transpose = 0;
+let keys = `G G# A A# B C C# D D# E F F#`.split(' ');
+
+function changeSa (key) {
+    transpose = keys.indexOf(key) - keys.indexOf('C#');
+    let mp3 = "https://ragajunglism.org/wp-content/uploads/" + tanpuras_sapa[keys.indexOf(key)] + ".mp3";
+    let tanpura = document.getElementById("tanpura");
+    tanpura.volume = 0.2;
+    tanpura.pause();
+    console.log (mp3);
+    tanpura.setAttribute('src', mp3);
+    tanpura.load();
+}
+
+function useRaag (raag) {
+    selected_raag = raag;
+    $("#hear").empty();
+
+    scale = raag_scales[raag].trim().split(' ');
     let octaves = {};
     octaves.mid = scale;
     octaves.higher = [];
@@ -83,31 +100,28 @@ function createButtons() {
 	$(div).appendTo(d);
 	
     }
-
+        
     $(d).appendTo("#hear");
 
     $("#hear").find("button").click (function() {
-	playnote(convert_notation(this.id));
+	playphrase(convert_notation(this.id));
     });
     
 }
 
-let transpose = 0;
-let keys = `G G# A A# B C C# D D# E F F#`.split(' ');
-
-function changeSa (key) {
-    transpose = keys.indexOf(key) - keys.indexOf('C#');
-    let mp3 = "https://ragajunglism.org/wp-content/uploads/" + tanpuras_sapa[keys.indexOf(key)] + ".mp3";
-    let tanpura = document.getElementById("tanpura");
-    tanpura.volume = 0.2;
-    tanpura.pause();
-    console.log (mp3);
-    tanpura.setAttribute('src', mp3);
-    tanpura.load();
-}
 
 $(document).ready(function () {
-    createButtons();
+    for (let raag of raags) {
+	$("#raag-select").append(new Option(raag, raag));
+    }
+
+    $( "#raag-select" ).change(function() {
+	useRaag(this.value);
+    });
+    
+    useRaag("yaman");
+    $("#raag-select").val("yaman");
+    
     for (let key of keys) {
 	$("#key-select").append(new Option(key, key));
     }
