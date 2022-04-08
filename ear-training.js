@@ -52,7 +52,7 @@ function changeSa (key) {
 
     let mp3 = "https://ragajunglism.org/wp-content/uploads/" + tanpuras_sapa[abcd.indexOf(key)] + ".mp3";
     let tanpura = document.getElementById("tanpura");
-    tanpura.volume = 0.2;
+    tanpura.volume = 0.1;
     tanpura.pause();
     console.log (mp3);
     tanpura.setAttribute('src', mp3);
@@ -68,7 +68,8 @@ $(document).ready(function () {
     $("#key-select").change( function() {
 	changeSa (this.value);
     });
-    $("#datemod").html(document.lastModified);
+    //$("#datemod").html(document.lastModified);
+    console.log(document.lastModified);
     remove_notes = localStorage.getItem('removeNotes');
     console.log (remove_notes);
     if (remove_notes === null) remove_notes = 'r,g,M,d,n'.split(',');
