@@ -1,10 +1,25 @@
 const srgm = "s r R g G m M P d D n N S".split(' ');
-const abcd = "C#4 D4 D#4 E4     F4 F#4 G4 G#4   A4 A#4 B4 C5 C#5".split(/\s+/);
 
-const notemap =  abcd.reduce(function(notemap, field, index) {
-  notemap[srgm[index]] = field;
-  return notemap;
-}, {})
+const abcd = "C# D D# E     F F# G G#   A A# B C C#".split(/\s+/);
+
+const tanpuras_sapa = `/2020/03/db-tanpura-thick
+/2020/03/d-tanpura-thick
+/2020/03/eb-tanpura-thick
+/2020/03/e-tanpura-thick
+/2020/03/f-tanpura-thick
+/2020/03/gb-tanpura-thick
+/2020/03/g-tanpura-thick
+/2020/03/ab-tanpura-thick
+/2020/03/a-tanpura-thick
+/2020/03/bb-tanpura-thick
+/2020/03/b-tanpura-thick
+/2020/03/c-tanpura-thick
+`.split(/\s+/);
+
+let notemap = {};
+srgm.forEach((swar, i) =>
+    notemap[swar] = abcd[i] + octaveNum(swar,"C#"));
+
 
 var scores = {};
 
@@ -19,7 +34,40 @@ function popupNotes () {
     $('.hover_bkgr_subset').show(); 
 }
 
+function octaveNum(swar, key) {
+    let octave = 4;
+    if (abcd.indexOf(key) > 5) octave--;
+
+    let diff = 11 - abcd.indexOf(key);
+    if (srgm.indexOf(swar) >= diff) octave++;
+    return octave;
+}
+
+function changeSa (key) {
+    let index = abcd.indexOf(key);
+    let notes = $.merge(abcd.slice(index), abcd.slice(1,index));
+    notes.push(key);
+    srgm.forEach((swar, i) =>
+	notemap[swar] = notes[i] + octaveNum(swar,key));
+
+    let mp3 = "https://ragajunglism.org/wp-content/uploads/" + tanpuras_sapa[abcd.indexOf(key)] + ".mp3";
+    let tanpura = document.getElementById("tanpura");
+    tanpura.volume = 0.2;
+    tanpura.pause();
+    console.log (mp3);
+    tanpura.setAttribute('src', mp3);
+    tanpura.load();
+}
+
 $(document).ready(function () {
+    
+    for (let key of abcd.slice(0,-1)) {
+	$("#key-select").append(new Option(key, key));
+     }
+    
+    $("#key-select").change( function() {
+	changeSa (this.value);
+    });
     $("#datemod").html(document.lastModified);
     remove_notes = localStorage.getItem('removeNotes');
     console.log (remove_notes);
@@ -53,7 +101,8 @@ $(document).ready(function () {
 	$("#popup_swaras").append(b);
     }
 
-    remove_notes = remove_notes.split(',');
+    console.log (remove_notes);
+    //remove_notes = remove_notes.split(',');
     jQuery.each(remove_notes, function(i, id) {
 	if (!id) return;
 	$("#"+id).hide();
