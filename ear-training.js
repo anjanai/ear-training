@@ -2,19 +2,6 @@ const srgm = "s r R g G m M P d D n N S".split(' ');
 
 const abcd = "C# D D# E     F F# G G#   A A# B C C#".split(/\s+/);
 
-const tanpuras = `Kali-1-Csharp-G-Pancham.mp3?_=25
-Safed-2-D-G-Pancham.mp3?_=11
-Kali-2-Dsharp-G-Pancham.mp3?_=23
-Safed-3-E-G-Pancham.mp3?_=9
-Safed-4-F-G-Pancham.mp3?_=7
-Kali-3-Fsharp-G-Pancham.mp3?_=21
-Safed-5-G-G-Pancham.mp3?_=5
-Kali-4-Gsharp-G-P_2-pancham.mp3?_=19
-Safed-6-A-G-Pancham.mp3?_=3
-Kali-5-Asharp-G-Pancham.mp3?_=17
-Safed-7-B-G-Pancham.mp3?_=1
-Safed-1-C-G-Pancham.mp3?_=13`.split (/\s+/);
-
 let notemap = {};
 srgm.forEach((swar, i) =>
     notemap[swar] = abcd[i] + octaveNum(swar,"C#"));
@@ -49,7 +36,7 @@ function changeSa (key) {
     srgm.forEach((swar, i) =>
 	notemap[swar] = notes[i] + octaveNum(swar,key));
 
-    let mp3 = "http://www.swarmanttra.com/wp-content/uploads/2015/03/" + tanpuras[abcd.indexOf(key)];
+    let mp3 = key.toLowerCase().replace("#","%23") + ".mp3";
     let tanpura = document.getElementById("tanpura");
     tanpura.volume = 0.03;
     tanpura.pause();
