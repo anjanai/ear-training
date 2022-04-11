@@ -36,7 +36,7 @@ function changeSa (key) {
     srgm.forEach((swar, i) =>
 	notemap[swar] = notes[i] + octaveNum(swar,key));
 
-    let mp3 = key.toLowerCase().replace("#","%23") + ".mp3";
+    let mp3 = key.toLowerCase().replace("#","%23") + "_quieter.mp3";
     let tanpura = document.getElementById("tanpura");
     tanpura.volume = 0.03;
     tanpura.pause();
