@@ -39,7 +39,6 @@ function changeSa (key) {
     let mp3 = key.toLowerCase().replace("#","%23") + "_quieter.mp3";
     let tanpura = document.getElementById("tanpura");
     tanpura.pause();
-    console.log ("quiter", mp3);
     tanpura.setAttribute('src', mp3);
     tanpura.load();
 }

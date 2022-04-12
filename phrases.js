@@ -15,6 +15,7 @@ const notemap =  abcd.reduce(function(notemap, field, index) {
 }, {})
 
 
+
 var selected_raag, scale;
 
 
@@ -96,6 +97,8 @@ function random() {
     $( "#raag-select" ).val(raag).change();
 }
 
+
+
 $(document).ready(function () {
     for (let raag of raags) {
 	$("#raag-select").append(new Option(raag, raag));
@@ -113,7 +116,8 @@ $(document).ready(function () {
     $( "#raag-select" ).change(function() {
 	useRaag(this.value);
     });
-    
+
+    initTanpura();
     useRaag("yaman");
     $("#raag-select").val("yaman");
     $("#repeat").hide();
@@ -123,11 +127,6 @@ $(document).ready(function () {
 });
 
 String.prototype.firstWord = function(){return this.replace(/\s.*/,'')}
-
-function tanpura() {
-    let tanpura = $('#tanpura')[0];
-    tanpura[tanpura.paused ? 'play' : 'pause']();
-}
 
 function start() {
     $("#repeat").show();
@@ -177,7 +176,10 @@ function playphrase(notes) {
 	
 	return midiBuffer.init({
 	    visualObj: visualObj,
-	    audioContext: audioContext
+	    audioContext: audioContext,
+	    options: {
+		midiTranspose: transpose,
+	    },
 	}).then(function (response) {
 	    return midiBuffer.prime();
 	}).then(function () {

@@ -1,32 +1,3 @@
-const tanpuras_sapa = `/2020/03/g-tanpura-thick
-/2020/03/ab-tanpura-thick
-/2020/03/a-tanpura-thick
-/2020/03/bb-tanpura-thick
-/2020/03/b-tanpura-thick
-/2020/03/c-tanpura-thick
-/2020/03/db-tanpura-thick
-/2020/03/d-tanpura-thick
-/2020/03/eb-tanpura-thick
-/2020/03/e-tanpura-thick
-/2020/03/f-tanpura-thick
-/2020/03/gb-tanpura-thick`.split(/\s+/);
-
-console.log (tanpuras_sapa);
-
-const tanpuras_sama = `/2021/02/G-Tanpura-B5-SaMa-2021
-/2021/02/Ab-Tanpura-B5-SaMa-2021
-/2021/02/A-Tanpura-B5-SaMa-2021
-/2021/02/Bb-Tanpura-B5-SaMa-2021
-/2021/02/B-Tanpura-B5-SaMa-2021
-/2021/02/Low-D-Tanpuras-B5-SaMa-2021
-/2021/02/C-Tanpura-B5-SaMa-2021
-/2021/02/Db-Tanpura-B5-SaMa-2021
-/2021/02/D-Tanpura-B5-SaMa-2021
-/2021/02/Eb-Tanpura-B5-SaMa-2021
-/2021/02/E-Tanpura-B5-SaMa-2021
-/2021/02/F-Tanpuras-B5-SaMa-2021
-/2021/02/Gb-Tanpura-B5-SaMa-2021`.split(/\s+/);
-
 const srgm =
            `,m ,M ,P ,d ,D ,n ,N
 S r R g    G m M P   d D n N
@@ -48,20 +19,6 @@ function convert_notation (note) {
     let abc = "Q: 50\n%%MIDI program 2\n";	// tempo & instrument
     abc += notemap[note];
     return abc;
-}
-
-let transpose = 0;
-let keys = `G G# A A# B C C# D D# E F F#`.split(' ');
-
-function changeSa (key) {
-    transpose = keys.indexOf(key) - keys.indexOf('C#');
-    let mp3 = "https://ragajunglism.org/wp-content/uploads/" + tanpuras_sapa[keys.indexOf(key)] + ".mp3";
-    let tanpura = document.getElementById("tanpura");
-    tanpura.volume = 0.2;
-    tanpura.pause();
-    console.log (mp3);
-    tanpura.setAttribute('src', mp3);
-    tanpura.load();
 }
 
 function useRaag (raag) {
@@ -104,13 +61,14 @@ function useRaag (raag) {
     $(d).appendTo("#hear");
 
     $("#hear").find("button").click (function() {
-	playphrase(convert_notation(this.id));
+	playnote(convert_notation(this.id));
     });
     
 }
 
 
 $(document).ready(function () {
+    initTanpura();
     for (let raag of raags) {
 	$("#raag-select").append(new Option(raag, raag));
     }
@@ -122,21 +80,8 @@ $(document).ready(function () {
     useRaag("yaman");
     $("#raag-select").val("yaman");
     
-    for (let key of keys) {
-	$("#key-select").append(new Option(key, key));
-    }
-    $("#key-select").change( function() {
-	changeSa (this.value);
-    });
-    $("#key-select").val("C#");
-    changeSa("C#");
-
 });
 
-function tanpura() {
-    let tanpura = $('#tanpura')[0];
-    tanpura[tanpura.paused ? 'play' : 'pause']();
-}
 
 var visualObj;
 var audioContext = new window.AudioContext();
