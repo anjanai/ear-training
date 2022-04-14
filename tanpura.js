@@ -8,10 +8,11 @@ function tanpura() {
 
 function initTanpura() {
     for (let key of keys) {
-	$("#key-select").append('<li><a class="dropdown-item" href="#">' + key + '</a></li>');
+	$("#key-select").append(new Option(key, key));
     }
-    $(".dropdown-item").click(function(){ changeSa($(this).text());  });
+    $("#key-select").change(function(){ changeSa(this.value);  });
     changeSa("C#");
+    $("#key-select").val("C#");
 }
 
 function changeSa (key) {
@@ -19,6 +20,15 @@ function changeSa (key) {
     transpose = keys.indexOf(key) - keys.indexOf('C#');
     console.log (key, transpose);
 
+    // for ear-training.js
+    if (abcd != null) {
+	let index = abcd.indexOf(key);
+	let notes = $.merge(abcd.slice(index), abcd.slice(1,index));
+	notes.push(key);
+	srgm.forEach((swar, i) =>
+	    notemap[swar] = notes[i] + octaveNum(swar,key));
+    }
+    
     let tanpura = $('#tanpura')[0];
     let paused = tanpura.paused;
     let mp3 = "/ear-training/" + key.toLowerCase().replace("#","%23") + "_quieter.mp3";

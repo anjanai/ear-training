@@ -29,31 +29,8 @@ function octaveNum(swar, key) {
     return octave;
 }
 
-function changeSa (key) {
-    let index = abcd.indexOf(key);
-    let notes = $.merge(abcd.slice(index), abcd.slice(1,index));
-    notes.push(key);
-    srgm.forEach((swar, i) =>
-	notemap[swar] = notes[i] + octaveNum(swar,key));
-
-    let mp3 = key.toLowerCase().replace("#","%23") + "_quieter.mp3";
-    let tanpura = document.getElementById("tanpura");
-    tanpura.pause();
-    tanpura.setAttribute('src', mp3);
-    tanpura.load();
-}
-
 $(document).ready(function () {
-    
-    for (let key of abcd.slice(0,-1)) {
-	$("#key-select").append(new Option(key, key));
-     }
-    
-    $("#key-select").change( function() {
-	changeSa (this.value);
-    });
-    //$("#datemod").html(document.lastModified);
-    console.log(document.lastModified);
+    initTanpura();
     remove_notes = localStorage.getItem('removeNotes');
     console.log (remove_notes);
     if (remove_notes === null) remove_notes = 'r,g,M,d,n'.split(',');
