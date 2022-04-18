@@ -21,7 +21,7 @@ function changeSa (key) {
     console.log (key, transpose);
 
     // for ear-training.js
-    if (abcd != null) {
+    if (document.title === "Ear-training") {
 	let index = abcd.indexOf(key);
 	let notes = $.merge(abcd.slice(index), abcd.slice(1,index));
 	notes.push(key);
