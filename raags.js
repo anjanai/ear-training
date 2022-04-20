@@ -13,6 +13,7 @@ var raag_scales = {
     kafi: "S R g m P D n",
     bhoop: "S R G P D",
     kedar: "S R G m M P D N",
+    patdeep: "S R g m P D N",
 };
 
 var raag_phrases = {
@@ -30,6 +31,9 @@ var raag_phrases = {
     nat_bhairav: `R G m d P ; m G R ; G m R S ,N ,d S ; S R R G ; G m m P ; m G m R ; S R S ; P d d P d N S' ; S' N d P ; P m G m ; G m d N S' ; d N d S' ; S' R' S' d d P ; S' N d P ; S R ; R G ; G m ; m P m ; G m R S ; R G m d P ; P d m ; m P G ; G m R G ; R G m R S ; ,N ,d S ; G m d N S' ; N d S' ; S' R' S' ; S' R' S' N d P ; N S' R' S' d P ; G m R ; R S ; ,d ,N S`,
     kafi: `g R ; m P ; m P D P ; D n S' ; n D P ; S R m P ; D m P g R ; D P  m P  m P  g R ; R g  m P  R g  R ; n D P m g R ; n D ; m P D n P D S' ; S' n D P m P D P g R ; P m g R m g R S;`,
     bhoop: `G R G; P G; D P; S' D P G; P G R G; G R S;  S ,D S R G ; R G S R ,D S ; S R G P ; P G R G ; R P G ; G S R ; R ,D S ; G R G ; P G ; P D P P ; D P ; G P R G R S ,D S ; S R G R G P D S' ; P D P S' ; S' S' ; R' S' D S' ; D S' R' G' R' S' ; D S' D P G R G ; P R G R S ; R ,D S `,
+
+    patdeep: `g m P N S' D P ; m g m P N N N S' ; D P m g m P ; P g m ; g R S ,N ,N S; N S ; g m P ; m g R S ;  g m P D P ; g m P N S' ; N S' D P ; D P m g m g ; m P m g m g R S`,
+
 }
 
 var raags = Object.keys(raag_scales).sort();
