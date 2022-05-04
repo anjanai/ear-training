@@ -22,11 +22,12 @@ function changeSa (key) {
 
     // for ear-training.js
     if (document.title === "Ear-training") {
-	let index = abcd.indexOf(key);
-	let notes = $.merge(abcd.slice(index), abcd.slice(1,index));
-	notes.push(key);
+	let index = keys.indexOf(key);
+	
 	srgm.forEach((swar, i) =>
-	    notemap[swar] = notes[i] + octaveNum(swar,key));
+	    notemap[swar] = piano_keys[index++]);
+	console.log(notemap['s'],notemap['S'], notemap);
+	   
     }
     
     let tanpura = $('#tanpura')[0];

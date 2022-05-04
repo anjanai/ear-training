@@ -2,11 +2,10 @@ const srgm = "s r R g G m M P d D n N S".split(' ');
 
 const abcd = "C# D D# E     F F# G G#   A A# B C C#".split(/\s+/);
 
-let notemap = {};
-srgm.forEach((swar, i) =>
-    notemap[swar] = abcd[i] + octaveNum(swar,"C#"));
+const piano_keys = `G3 G#3 A3 A#3 B3    C4 C#4 D4 D#4 E4 F4 F#4
+G4 G#4 A4 A#4 B4    C5 C#5 D5 D#5 E5 F5 F#5`.split(/\s+/);
 
-
+let notemap = {};		// will be populated in tanpura.js
 var scores = {};
 
 var lastnote = "";
@@ -18,15 +17,6 @@ var remove_notes = [];
 
 function popupNotes () {
     $('.hover_bkgr_subset').show(); 
-}
-
-function octaveNum(swar, key) {
-    let octave = 4;
-    if (abcd.indexOf(key) > 5) octave--;
-
-    let diff = 11 - abcd.indexOf(key);
-    if (srgm.indexOf(swar) >= diff) octave++;
-    return octave;
 }
 
 $(document).ready(function () {

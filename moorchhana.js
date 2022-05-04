@@ -13,9 +13,12 @@ function rotate (arr, n) {
 }
 
 function moorchhana() {
-    let scale = $("#scale").val().split('');
+    let scale = $("#scale").val().replace(" ", '').replace('s', 'S').replace('p', 'P').split('');
     let indices = [];
     for (note of scale) {
+	if (notes.indexOf(note) < 0)
+	    alert ( "Illegal note(s) in " + scale);
+	
 	indices.push(notes.indexOf(note));
     }
     $("#list").empty();
