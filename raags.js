@@ -16,6 +16,7 @@ var raag_scales = {
     patdeep: "S R g m P D N",
     bairagi: "S r m P n",
     bhairavi: "S r g m P d n",
+    vachaspati: "S R G M P D n",
 };
 
 var raag_phrases = {
@@ -40,7 +41,7 @@ var raag_phrases = {
 
     bhairavi: `g S r S ; g m P ; d m d n S' ; r' S' d P g m r S; r g r g S r S ; g m P ; P d P ; P d n d m ; d P g m ; P m g m r r S ; ,d S ; S g m P ; P d P ; m M m ; g r S ; S g r m g ; S g P m g S r S ; ,n r ,n ,d ,n ,d ,P ,P ,d ,n ,d S;`,
 
-    
+    vachaspati: `,n S G M ; P D P ; M G R S ; R ,n S ; M G R S ; `,
 
 }
 
