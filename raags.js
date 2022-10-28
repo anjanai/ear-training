@@ -1,25 +1,27 @@
 var raag_scales = {
-    yaman: "S R G M P D N",
-    kalavati: "S G P D n",
-    jog: "S g G m P n ",
+    abhogi_kanada: "S R g m D",
     bahar: "S R g m P D n N",
+    bairagi: "S r m P n",
     basant: "S r G m M P d N",
-    keervani: "S R g m P d N",
-    ramdasi_malhar: "S R g G m P D n N",
     basant_bahar: "S r R g G m M P d D n N",
+    bhairavi: "S r g m P d n",
+    bhoop: "S R G P D",
     gopika_basant: "S g m P d n",
     jaijaivanti: "S R g G m P D n N",
-    nat_bhairav: "S R G m P d N",
+    jog: "S g G m P n ",
     kafi: "S R g m P D n",
-    bhoop: "S R G P D",
+    kalavati: "S G P D n",
     kedar: "S R G m M P D N",
+    keervani: "S R g m P d N",
+    nat_bhairav: "S R G m P d N",
     patdeep: "S R g m P D N",
-    bairagi: "S r m P n",
-    bhairavi: "S r g m P d n",
+    ramdasi_malhar: "S R g G m P D n N",
     vachaspati: "S R G M P D n",
+    yaman: "S R G M P D N",
 };
 
 var raag_phrases = {
+    abhogi_kanada : `S R ,D S ; R g m ; g m R S; S R g m D S' ; S' D m g R g m R S ; R ,D ,D S ; S R ,D ; S R g m ; g m D S' ; S' D m ; D m g R ; g m R S ; R ,D S R g m R S ;`,
     kedar : `S m ; M P D P m ; S R S ; M P D P M ; P S'; S' R' S' S' D D P;  m G P; S' S' D P ; S' R' R' S' D D P; M P S' ; M P D P M P S' ; M P D P S' ; R' S' N S' D D P ; D P M P m S R S `,
     yaman : `N R ; ,N R G ; ,N R ,N G ; R G ; ,N M G R S ; ,N R G ; M R G M P ; M D P ; M D N ; M D M N ; G M G ; N D P ; M R G ; ,N R S ; ,D ,N ,D S ; ,D ,N R G   ; ,N R G ; G R G ; ,N R ,N G ; ,N R G M R M G ; G R M G ; M P ; G M P R S   ; ,N R S ; ,N R G M P ; M P M P ; P M D P M P ; M D M N ; N D P ; M G ; G M D N  M D N ; N D P M G R  S ; ,N R S `,
     kalavati : `S G P D ; G P D ; P D P S' ; n D D ; n D P ; G P D ; G D P ; G P G S ; ,n ,D S ;`,
@@ -42,7 +44,6 @@ var raag_phrases = {
     bhairavi: `g S r S ; g m P ; d m d n S' ; r' S' d P g m r S; r g r g S r S ; g m P ; P d P ; P d n d m ; d P g m ; P m g m r r S ; ,d S ; S g m P ; P d P ; m M m ; g r S ; S g r m g ; S g P m g S r S ; ,n r ,n ,d ,n ,d ,P ,P ,d ,n ,d S;`,
 
     vachaspati: `,n S G M ; P D P ; M G R S ; R ,n S ; M G R S ; `,
-
 }
 
 var raags = Object.keys(raag_scales).sort();
