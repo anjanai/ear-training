@@ -1,5 +1,9 @@
 var raag_scales = {
     abhogi_kanada: "S R g m D",
+    adana: "S R g m P d n",
+    aheer_bhairav: "S r G m P D n",
+    alhaiya_bilawal: "S R G m P D n N",
+    
     bahar: "S R g m P D n N",
     bairagi: "S r m P n",
     basant: "S r G m M P d N",
@@ -21,6 +25,14 @@ var raag_scales = {
 };
 
 var raag_phrases = {
+
+    alhaiya_bilawal : `G R G P ; D n D P ; m G R ; G P D N S' ;  S R G P D N S' ; S' N D P D n D P m G R S;  S R G ; G m R G P ; P m G ; R G R S ; G m R G P ; D G m G ; G P D m G ; G P D N S' ; S' R' S' ; S' N D P ; D N S' ; S' N D P ; D n D P ; D G m G R S ;`,
+    
+    aheer_bhairav : `G m P ; D n D ; P D P ; S' n D ; n D P m G m ; G m P m r r S ; ,n ,D ,n r r S ; S ,n ,D ,n r r S ; r G m ; G m P D P m ; G m r r S ; G m P D n ; n D n S' ; S' r' S' ; n S' n D P ; D P m G ; G m P m r r S ; ,n ,D ,n ; r r S ;`,
+    
+    adana : `m P d n S'; S' d n S' ; S' d n P ; m P ; g m R S;  S R m P d n S' ; S' d n P ; m P g m R S; S R m P ; d n P ; m P S' d n P ;`,
+
+ 
     abhogi_kanada : `S R ,D S ; R g m ; g m R S; S R g m D S' ; S' D m g R g m R S ; R ,D ,D S ; S R ,D ; S R g m ; g m D S' ; S' D m ; D m g R ; g m R S ; R ,D S R g m R S ;`,
     kedar : `S m ; M P D P m ; S R S ; M P D P M ; P S'; S' R' S' S' D D P;  m G P; S' S' D P ; S' R' R' S' D D P; M P S' ; M P D P M P S' ; M P D P S' ; R' S' N S' D D P ; D P M P m S R S `,
     yaman : `N R ; ,N R G ; ,N R ,N G ; R G ; ,N M G R S ; ,N R G ; M R G M P ; M D P ; M D N ; M D M N ; G M G ; N D P ; M R G ; ,N R S ; ,D ,N ,D S ; ,D ,N R G   ; ,N R G ; G R G ; ,N R ,N G ; ,N R G M R M G ; G R M G ; M P ; G M P R S   ; ,N R S ; ,N R G M P ; M P M P ; P M D P M P ; M D M N ; N D P ; M G ; G M D N  M D N ; N D P M G R  S ; ,N R S `,
