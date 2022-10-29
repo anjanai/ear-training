@@ -26,9 +26,29 @@ var raag_scales = {
     darbari_kanada: "S R g m P d n",
     des: "S R G m P D n N",
     deshkar: "S R G P D",
-    
+    desi: "S R g m P D n",
+    dev_gandhar: "S R g G m P d n",
+    devgiri_bilawal: "S R G m P D n N",
+    devshree: "S R M P n",
+    dhanashree_bhairavi_ang: "S r g m P d n",
+    dhani: "S g m P n",
+    durga: "S R m P D",
+    gaud_malhar: "S R G m P D n N",
+    gaud_sarang: "S R G m M P D N",
+    gauri_bhairav_ang: "S r G m P d N",
     gopika_basant: "S g m P d n",
+    gorakh_kalyan: "S R m D n",
+    gunkali: "S r m P d",
+    gurjari_todi: "S r g M d N",
+    hameer: "S R G m M P D N",
+    hamsadhwani: "S R G P N",
+    hamsakinkini: "S R g G m P D n N",
+    harikauns: "S g M D n",
+    hemant: "S R G m P D N",
+    hemshri: "S g m P n N",
+    hindol: "S G M D N",
     jaijaivanti: "S R g G m P D n N",
+    
     jog: "S g G m P n ",
     kafi: "S R g m P D n",
     kalavati: "S G P D n",
@@ -42,6 +62,48 @@ var raag_scales = {
 };
 
 var raag_phrases = {
+    hindol: `D D N M D S' ; D M G ; S ,D ,D S; S G M D N M D S' ; S' N D M G M G S ,D S; G M D G M G ; M G ; G S ; ,D ,D S ; ,N ,M ,D S ; S G M D ; G M G ; M D S' ; N M D ; G M M G ; S ; ,D ,D S;`,
+
+    hemshri: `,N S g m P ; m g S g ,N S ; g m P S' ; n P ; m ; P m g m P ; g P m g S g ,N S; ,N S g m P N S' ; S' n P m g m g S ,N ,N S; S g m P m ; g m P n P N N S' ; N S' g' N S' ; P N S' n P ; n P m g m ; g m P m g S ; ,N ,N S ; ,P ,N S g ,N S;`,
+
+
+    hemant: `G m D N D ; m (P)m ; N D (P)m ; G m G R S ; G m D P m G R S; S G m D N S' ; S' N D P m G R S; S G m D ; P m ; G R S ; ,N ,D ; ,m ,D ,N S ; m (P)m ; G m D N ; m D N S' ; S' R' S' N D ; N S' D P m ; m P m m G m G R S ;`,
+
+    harikauns: `S ,D ,n S ; g M g S ; g M D n S' ; S' n D M g S ; g M g S ,n S ,D ,n g S; S g M D n S' ; S' n D M g S ; S ,n ,D ; ,n S ; ,D ,n S g S ; g ,n S g M g ; M D n D M g S ; g M D n S' ; S' g' S' n D ; n D M ; D M g ; M g S ;`,
+
+    hamsakinkini: `G m D P ; m P g R S ; ,N S G m P P ; m P ; m n D P ; D P m P ; G m D P g R S ; ,N S G m P N S' ; S' n D P m P G m P g R S ,N S ; ,N S G m P g R ; S R ,N S ; G m P n D P G m P g R S`,
+
+    hamsadhwani: `,N R G P G R G P N S'; S' N P G R G P G R S; S R G P N S' ;  S' N P G R S ,N ,P ,N R S ; ,N R G S ; G P G ; R P G ; N P G R ; G R G R S ; ,N ,P ,N R ,N ,P S`,
+
+
+    hameer: `G m N D ; D P ; G m P G m R S; S G m D ; N D S'; S G m N D P ; G m D N S'; S' N D P M P D P G m P G m R S;  S' N D P G m R S; S R R S ; P ; G m P G m R S ; G m N D D P ; G m D N S' ; P D P P S' ; G m D N D S' ; M P D N S' ; S' R' S' ; N S' D D P ; S' N D P ; M P G m R ; P G m R S ;`,
+
+    gurjari_todi: `S r ,N ,d S ; r g M d ; M d N d ; N d M g r ; g r S; ,N ,d ; ,M ,d ; ,M ,N ,d ; ,N ,N S ; S r ; S r g ; g r ,N ,d ; ,d ,N ,N S ; S r g M ; d M d ; M d N S' ; d N S' ; d N S' r' ; g' r' N d ; M d N S' r' ; d S' ; d S' r' N d M ; d N d M ; g M d ; M g r S;`,
+
+    gunkali: `S r m P d ; P d m r ; r S ,d S ; m P d d S' ; d P d m ; P m r S ; S r m P d S'; S' d P m r r S ,d S; ,d ,d S ; r r S ; r m ; m m P m ; P P d m ; P m r ; r S ,d ,d S; m P d S' ; S' r' S' d P ; r' S' d P ; d m P d ; m r S ;`,
+
+
+    gorakh_kalyan: `S R m ; R m R S ,n ; ,n D S ; R m D n D S' ; S' n D m R ; m R S ,n ; ,n ,D R S; S R m D S' ; S' n D m R S ,n ; ,n ,D R S; S R m R S ,n ; ,D ,n ,D ,D S ; ,D S R ; R R m m R ; m m D ; n n D ; m D m R ; ,n ,D S ; S R m R ; m D S' ; S' R' R' S' n D ; m R (P)m R ; ,n ,D S ; S R ,n ,D S ; ,n S R m R ; R m D m ; m D n D ; m D S' ; n S' R' S' ; D n D m ; m (P)m ; R S ,n ; R ,n ,D S ;`,
+
+    gauri_bhairav_ang: `S r S ,N S G r; m G r S r ,N S; S r ,N S; S r G m P d P; P d N S' ; S' N d P m G; r G m G r; S r ,N S; ,d ,N ,d S ,N S; S r G m G ; r G r m G r S r ,N S ; G m P d P ; P d N S' ; d N d S' N ; d P m P m d P m ; G r ; S r ,N S; G m P d P ; m P m d P m G ; m G m ; P P m G r G ; r G r m G r S ,N ; S r G m G;`,
+
+    gaud_sarang: `S G R m G P R S ; m G P ; D P S' ; S' D P m G ; G R m G P R S ; S G R m G D P N D S' ; ,N S G R m G; P M D M P S' ; S' N D P M P D P G R m G P R S ; S' N D P M P m g ; m g R m G P R S; S G R m G P R S ; G R m G ; P N D N D P m G ; G m P N S' ; S' ; D P m G ; M P M P ; G R m G ; P D P P ; S' R' S' S' ; S' N D P m G ; R G R m G ; P R S ;`,
+
+    gaud_malhar: `S R G m ; R G m G m ; G R G (R)S ; m P D n P ; m P D N S' ; S R G m ; R P ; m P D N S' ; S' n D n P m ; G R G (R)S ; R G m ; S R G m ; m R ; m R (m)R P ; m P D (n)P ; m P D N S' ; R' S' D n P ; D P m G P m ; P ; P N D N S' ; S' D P m ; m R (m)R ; P ; G P m ; S R G m ; G R G m ; G R G (R)S ;`,
+    
+    durga: `m P D ; m R ,D S ; R R P; S R m P D S' ; S' D P D m R S ,D S ;  R m P D ; P D m ; m P D D m ; D m P D S' ; D D S' S' D D m; m P D ; m R ,D S;`,
+
+    dhani: `,n S g ; S g m P g ; n P g S ; S g m P n S' ; S' n P m g S ; S ,n ,P ; ,n S g ; g S g ,n S ; S g m g ; S g m P g ; g m n P g m g ; m P g m g S ; g m P S' n S' ; n S' g' S' ; g' n S' ; P S' P n P ; n P g m g ; g m P g S ; g ,n S g S ;`,
+
+    dhanashree_bhairavi_ang: `S; g m P n d P ; P d m P g ; m g r S ; g m P g r S ; ,n S g m P n S' ; S' n d P m P g m g r S;  ,n S g r S; ,n S g m P ; P d m P g ; g m P g ; m g r S ; ,n S g m P ; g m P n d P ; P ; g m P n S' ; n S' r' n S' n d P ; p d m P g ; g m P g r S ; P ; g m P n S' ; P n S' g' r' S' ; g' r' S' n ; S' n d P ; P d n d ; n d m P g m ; g m P g m g r S ;`,
+
+    devshree: `R M P ; M P n P ; M R S; ,n ,P ,n S; S R M P n S' ; S' n P M R S; S R M R ; S ,n S R S; R M P ; M P n P ; M P n M P ; R M P ; M P n n S'; n S' R' S'; R' n S' ; n P M P ; M R S R ; ,n S; ,P ,n S ;`,
+
+    devgiri_bilawal: `D ,N ,D S R G ; G R S ; ,D ,P G ; ,N R G m G ; G P m ; G R S ; S R G P D N S' - S' N D P ; D n D P ; m G R S ; ,N S ; ,D ,P G R S ; G R G ; G m G R S ; ,D ,P G R S ; S ,N R G m G ; G R G P ; P D N S' ; S' N D P ; D n D P ; m G R G R S ; ,N R G R S;`,
+    dev_gandhar: `,d ,n S R G m G m ; d m P n d P ; d m P g R S ; R G m ; P g R S ; d m P g R G m g R S ; S R G m P m g R G m P d n S' ; S' n d P m P g R G m g R S; R ,n ; S R G m ; g R ; G m ; m m P ; d m P ; g r G m ; n d P ; Pd dP mP g R G m g R S R ,n ; S R G M ; R G m P ; m ; m P d d n n S' ; R' n d P ; d P g R ; R G m g R ; R S m P S' ; S' R' G' m' ; m' g' R' S' ; R' n ; n d P ; d P m g ; R ; G m ; m g R ; G m g R S;`,
+
+    desi: `R m P ; D m P S' ; S' P D m P ; R g S R ,n S; S R m P n S' ; S' P D m P R g S R ,n S; S R ,n S ; ,n S R m P ; m P D m P ; R g S R ,n S ; R m P g R ; m P D P ; D m P S' ; m P n S' ; S' P D m P ; m P d m P g R ; R m g R g R S R ,n S ;`,
+
     deshkar: `S R G P D ; D G P ; S' D ; P D G P ; G R S ; ,D S; S R G P D S'; S' D P D G P G R S; S R G P D ; D G P ; P D G P ; S' D ; D S' R' D R' S' ; S' D D P ; P D G P ; G (R) S ; S ,D S ; S G P D P ; G (R) S;`,
 
 
