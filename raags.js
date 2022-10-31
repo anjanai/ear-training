@@ -76,6 +76,10 @@ var raag_scales = {
     miyan_malhar: "S R g m P D n N",
     malkauns: "S g m d n",
     maand: "S R g G m P d D N",
+    maru_bihag: "S R G m M P D N",
+    marwa: "S r G M D N",
+    megh_malhar: "S R m P n",
+    mohankauns: "S g G m d n",
     
     nat_bhairav: "S R G m P d N",
     patdeep: "S R g m P D N",
@@ -85,6 +89,15 @@ var raag_scales = {
 };
 
 var raag_phrases = {
+    mohankauns: `S G m g S ; ,n ,d ; ,n S ; S m G ; m d n d m G ; m G g S; S G m d n S' ; S' n d m g S; S ,n ,d ; ,d ,n S ; S G G m ; G m g S ; G m d m ; d n S' ; S' g' S' n d m G ; m n d m G ; m d G ; m g S ;`,
+
+    megh_malhar: `,n S R P m R ; m P m R ; m P ; P m n P m R ; R R P m R R S ,n S; S (m)R m P ,n S' ; S' n P m R S; R ,n S ; S ,n ; ,n ,n ,P ; ,P ,n S ; ,P ,n ,P S ; ,P ,n S (m)R ; ,n S (m)R ; (m)R (m)R P ; (m)R m m (m)R ; (m)R S ; ,n P ,n S ; ,n S (m)R m P n P ; m P S' ; P n S' ; P n P S' ; P n S' R' ; R' R' S' ; S' R' S' S' R' S'; n P ; m P n P (m)R S ; ,n S ; (m)R P m R ; R m P n n P ; n n P m R ; R P m n P ; n S' ; n P m R ; ,n R S ;`,
+
+    marwa: `S ; ,N ,D S ,N r ; r G M D ; D M G r ; ,N ,D r S ; S ,D ,N r G M D N S' ; S' N D M G r S ; ,N ,D S ,N r S  ;N ,D ,N r ; G M D ; M G r ; ,N ,D r S ; M D ; M D S' ; S' D N r' N D ; M D ; M G r ; G r ,N ,D r S ;`,
+
+
+    maru_bihag: `M G ; M G R S ; S ,N S ; m G P ; M G M G R S ; S G M P N S' ; S' N D P M G M G R S; ,N S G M G R S ; G M P N ; N S' ; S' N D P N S' D P ; M G M G R S ; S m m G ; P D P M ; G M G R S ;`,
+
     maand: `G m P D S' N D; D P m; m P G R G S; G m P; P D S' N D; D d D P m m P m m G g G; D d D S'; S'N DP G m P; S R G S; S R m; m P; m P m m G; S R G S R S ,N ,D; ,D ,P ,N ,D ,P ,m; ,P ,D ,N ,P ,D S; S R m; m P G m P D N; P N D; m; G m P D N; P D S'; S' R' S' R' S' S' N D; D N S' N D P D; m P G; S R G S`,
 
     malkauns: `,d ,n S g m; g m n d m; d n S'; g’ S’ n d; S g m d n S' ; S' n d m g S; g g m ; ,d ,n S m ; g m g ; g m g S ; m m ; d d n n d m ; g g m g S ; ,n ,n S g ; S g m d m ; m d n d m ; g m d n; m d n ; n S' ; n n S' ; g' m' g' S' ; n S' d n d m ; g m g n ; n d ; d m g g m ; g S`,
