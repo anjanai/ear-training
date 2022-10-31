@@ -69,6 +69,13 @@ var raag_scales = {
     komal_rishabh_asavari: "S r g m P d n",
     lalit: "S r G m M d N",
     lanka_dahan_sarang: "S R g m P D n N",
+    madhukauns: "S g M P n",
+    madhmad_sarang: "S R m P n",
+    madhuvanti: "S R g M P D N",
+    malgunji: "S R g G m P D n",
+    miyan_malhar: "S R g m P D n N",
+    malkauns: "S g m d n",
+    maand: "S R g G m P d D N",
     
     nat_bhairav: "S R G m P d N",
     patdeep: "S R g m P D N",
@@ -78,6 +85,21 @@ var raag_scales = {
 };
 
 var raag_phrases = {
+    maand: `G m P D S' N D; D P m; m P G R G S; G m P; P D S' N D; D d D P m m P m m G g G; D d D S'; S'N DP G m P; S R G S; S R m; m P; m P m m G; S R G S R S ,N ,D; ,D ,P ,N ,D ,P ,m; ,P ,D ,N ,P ,D S; S R m; m P G m P D N; P N D; m; G m P D N; P D S'; S' R' S' R' S' S' N D; D N S' N D P D; m P G; S R G S`,
+
+    malkauns: `,d ,n S g m; g m n d m; d n S'; g’ S’ n d; S g m d n S' ; S' n d m g S; g g m ; ,d ,n S m ; g m g ; g m g S ; m m ; d d n n d m ; g g m g S ; ,n ,n S g ; S g m d m ; m d n d m ; g m d n; m d n ; n S' ; n n S' ; g' m' g' S' ; n S' d n d m ; g m g n ; n d ; d m g g m ; g S`,
+
+
+    miyan_malhar: `S R; R P; g g m R S; ,n D ,N ,N S; ,N S; m R P ; g m R S; m R P n D N S' ; S' n D n P; m P g g m R S;`,
+
+    malgunji: `G m g R S ; ,n S ; ,D ,n S R G m ; S R G m D n S' ; S' n D P m G R G m g R S ; S ,D ,n S R G m ; m D n S' ; S' n D P m G m ; m g R S ; S ,n ,D ,n S R G m ; m D N S' ; S' R' S' R' n S' ; R' R' S' n D P ; n n D P m G R G m ; m g R S ;`,
+
+    madhuvanti: `,N S M g M P; M g S R S; ,N S g M P N S' ; S' N D P M g M g R S ,N S; ,N S M ; M g R S ; N D P ; P D P ; M g ; M g R S; g M P N S' ; N S' D D P ; D P M g M g ; M g R S ; R ,N S ;`,
+
+    madhmad_sarang: `,n S R ; m R ; P m R ; n P m R ; P m R S ; ,n S; R m P n S' ; S' n P m R S ; ,n S R m P ; R m R ; n P m R ; m R S R ,n S ; R m P; n P m R; ,n S R S; m P n S' ; S' n P m P; P R m R ; n P m R S ;`,
+
+    madhukauns: `S g M ; P M g M P ; M P n S' ; S' n P M ; g M g S; S g M P n S' ; S' n P M g S; S g S ; g M g S ; S g M P ; M P g M g ; g M P n P ; n M P ; P M g M g S ; g M P n S' ; n g' S' ; g' n S' ; S' n P M ; P M g M P n P ; n M P g M g ; M g S ;`,
+
     lanka_dahan_sarang: `,N r G M d N S' - S' N d; M d M m; G M G r S; S R m P N S' ; S' n D P ; m P D P ; g R g R S ,N S; S ,N S ; ,N S R S ; R S ,n ,P ; ,m ,P ,n ,P S ; ,N S R ; ,N S R R P ; m m P ; R m P D P ; m P m n P ; S' D n P ; m P g R g R S ; ,n ,P ,m ,P ,N S ; R R m m P ; n P m P S' ; n P ; m P g R g R S ; ,N S R g R S ; R ,N S ; S R m P R g R S ; R m g R ; R D P ; P D P n D P ; R g R S ; ,n ,D ,P R S ;`,
 
     lalit: `,N r G m M m G r S ; G M d N d M m; r' N d M m; G m M m; G; M G r S; ,N r G M d N S' ; S' N d; M d M m; G M G r S`,
@@ -153,7 +175,7 @@ var raag_phrases = {
     devshree: `R M P ; M P n P ; M R S; ,n ,P ,n S; S R M P n S' ; S' n P M R S; S R M R ; S ,n S R S; R M P ; M P n P ; M P n M P ; R M P ; M P n n S'; n S' R' S'; R' n S' ; n P M P ; M R S R ; ,n S; ,P ,n S ;`,
 
     devgiri_bilawal: `D ,N ,D S R G ; G R S ; ,D ,P G ; ,N R G m G ; G P m ; G R S ; S R G P D N S' - S' N D P ; D n D P ; m G R S ; ,N S ; ,D ,P G R S ; G R G ; G m G R S ; ,D ,P G R S ; S ,N R G m G ; G R G P ; P D N S' ; S' N D P ; D n D P ; m G R G R S ; ,N R G R S;`,
-    dev_gandhar: `,d ,n S R G m G m ; d m P n d P ; d m P g R S ; R G m ; P g R S ; d m P g R G m g R S ; S R G m P m g R G m P d n S' ; S' n d P m P g R G m g R S; R ,n ; S R G m ; g R ; G m ; m m P ; d m P ; g r G m ; n d P ; Pd dP mP g R G m g R S R ,n ; S R G M ; R G m P ; m ; m P d d n n S' ; R' n d P ; d P g R ; R G m g R ; R S m P S' ; S' R' G' m' ; m' g' R' S' ; R' n ; n d P ; d P m g ; R ; G m ; m g R ; G m g R S;`,
+    dev_gandhar: `,d ,n S R G m G m ; d m P n d P ; d m P g R S ; R G m ; P g R S ; d m P g R G m g R S ; S R G m P m g R G m P d n S' ; S' n d P m P g R G m g R S; R ,n ; S R G m ; g R ; G m ; m m P ; d m P ; g r G m ; n d P ; Pd dP m P g R G m g R S R ,n ; S R G M ; R G m P ; m ; m P d d n n S' ; R' n d P ; d P g R ; R G m g R ; R S m P S' ; S' R' G' m' ; m' g' R' S' ; R' n ; n d P ; d P m g ; R ; G m ; m g R ; G m g R S;`,
 
     desi: `R m P ; D m P S' ; S' P D m P ; R g S R ,n S; S R m P n S' ; S' P D m P R g S R ,n S; S R ,n S ; ,n S R m P ; m P D m P ; R g S R ,n S ; R m P g R ; m P D P ; D m P S' ; m P n S' ; S' P D m P ; m P d m P g R ; R m g R g R S R ,n S ;`,
 
@@ -174,7 +196,7 @@ var raag_phrases = {
     bilaskhani_todi: `S r ,n ,d S ; S r g ; r g P ; P d n d ; d m g r ; g r S ; S r g P d S' ; S' r' n d  P ; P d n d m g r ; r g r S ; S r g P ; d m g r ; g r g r S ; r ,n ,d S ; S r g P ; d n d P ; g P d S' ; S' r' n d ; d S' r' ; r' n S' r' g' ; g' r' n d ; P d n d m ; g r ; g r S ;`,
 
     bihag: `,N S G ; G m G ; P M P G m G ; P M G m G R S; S G m P N S' ; S' N D P M P G m G R S, S' N D P M G m G R S;`,
-    bihagda: `S G m P ; m P G S; G m n D P ; G m G ; G m P N S' ; S' N P ; D n D P ; G m G ; m P m P G S; S G m P N S' - S' N P ; P D n D P ; G m G ; P m G S; N ,N S ; S ,N  ,P ; ,P ,N S ; ,N S G ; G m G  S ; S G ; G m P mP G S ; S G m D ; D P ; G m P m P G (R) S ; G m P D n D P ; G m G ; G m P N S' N (D) P ; D N S' N P ; D n D P ; P D G m G ; P m G (R) S ; G m n D P ; G m P S' ; N S' G' R' S' ; S' R' S' N (D) P ; n D P ; G m G ; G m P m P ; G (R) S;`,
+    bihagda: `S G m P ; m P G S; G m n D P ; G m G ; G m P N S' ; S' N P ; D n D P ; G m G ; m P m P G S; S G m P N S' - S' N P ; P D n D P ; G m G ; P m G S; N ,N S ; S ,N  ,P ; ,P ,N S ; ,N S G ; G m G  S ; S G ; G m P m P G S ; S G m D ; D P ; G m P m P G (R) S ; G m P D n D P ; G m G ; G m P N S' N (D) P ; D N S' N P ; D n D P ; P D G m G ; P m G (R) S ; G m n D P ; G m P S' ; N S' G' R' S' ; S' R' S' N (D) P ; n D P ; G m G ; G m P m P ; G (R) S;`,
     
     bhupal_todi: `S ,d S r g ; d P g r g r S;  S r g P d S' ; S' d P g r S ,d r S; S ,d S ; ,d r r S ; S r g r S ; r r g r ; g P r r g ; g P d P ; d S' ; d P ; P r g r S ; g r ; r g r S ;`,
     
