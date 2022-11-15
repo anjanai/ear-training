@@ -130,7 +130,7 @@ var raag_phrases = {
 
     tilang_bahar: `m P m g ; m ; n P m ; P N S' ; g m P m g m R S; S R S m ; G m P n P ; m D N S' ;S' n P m g m R S; G m ; G m P m ; G m R S ; m D N S' ; D N S' R' S' ; S' ,n P m G ; m P m ; D N S' nP G m R S ;`,
     
-    tilang: `G m P n P m G ; n P G m G ; S G m P N S' ; S' n P m G S; ,N S ; ,P ,n ,P ; ,P ,n ,P S ; ,N S ; ,P ,N S G ; G m P n ; m P N N S' ; P N S' ; P N S' G' R' S' ; P N S' G' G'm' m' P' G' R' S' ; N S' R' S n P ; m ; P m G m ; G S ,N S;`,
+    tilang: `G m P n P m G ; n P G m G ; S G m P N S' ; S' n P m G S; ,N S ; ,P ,n ,P ; ,P ,n ,P S ; ,N S ; ,P ,N S G ; G m P n ; m P N N S' ; P N S' ; P N S' G' R' S' ; P N S' G' G'm' m' P' G' S' ; N S' S n P ; m ; P m G m ; G S ,N S;`,
 
     tilak_kamod: `,P ,N S R G S ; R P m G ; S R G S ,N ; S R m P S’ ; S’ R’ G’ S’ ; S’ P D m G ; S R m G ; S R G S ,N ; ,P ,N S R G S ; S R m P N S’ ; S’ P D m G ; S R G S ,N ; ,P ,N S R G S ;  ,P ,N S R G S ,N ; S R P m G ; S R G S ,N ; S’ P ; D m G ; S R G S ,N ; S R m P D ; m P S’ ; S’ P D m G ; S’ P n D m G ;  P n D P ; D m G ; S R G S ,n ;`, 
 
@@ -192,7 +192,7 @@ var raag_phrases = {
     nayaki_kanada: `R ,n S R P (m)g ; g m P m R S R S ; g m n P ; n m P (m)g m P m R S R R S; m P n P S'; P n P; g m R S;
  S R (m)g m P n P S' ; S' n P n P m P (m)g g m R S ; R P ; m n P ; S R ,n S R P g m ; g m P m R S R S ; S R R g m ; m n P ; m P n P m P S' ; m P n S' ; S' n P n P ; n n P m P n n P m P ; g m P m R S R S ;`,
 
-    narayani: `S R ,n ,D ,P ; ,m ,P ,D S ; m R ; m R S ; S R P ; m P n D D P ; D P m R S ; S R m P D S' ; S' n D P m R S; S R P ; m P ; m P D n D S' ; m P D S' ; S' R n D S' ; S' R' m' R' S' ; S' n D D P ; m P D P m R ; m R ,n ,D S ;`,
+    narayani: `S R ,n ,D ,P ; ,m ,P ,D S ; m R ; m R S ; S R P ; m P n D D P ; D P m R S ; S R m P D S' ; S' n D P m R S; S R P ; m P ; m P D n D S' ; m P D S' ; S' R' n D S' ; S' R' m' R' S' ; S' n D D P ; m P D P m R ; m R ,n ,D S ;`,
 
     nand: `S G m D P R S ; G m P D N ; P D (P) m m P ; G m D P R S ; S G m D P R S ; G m P N S' ; S D N P ; D M P G ; G m D P R S ; S G m D P R S ; G m P D N ; (D)P ; P D (P) m m P ; G m D P R S ; G m P N S ; P N R' N D P ; P D M P ; G m (D)P R S ; G m P D N P ; P D P M D P G m D P R S;`,
     
@@ -226,7 +226,7 @@ var raag_phrases = {
 
     lalit: `,N r G m M m G r S ; G M d N d M m; r' N d M m; G m M m; G; M G r S; ,N r G M d N S' ; S' N d; M d M m; G M G r S`,
 
-    komal_rishabh_asavari: `m P d S' ; r' n d m g r ; g r S;  S r m P d S' ; S' r' n d m P d m g r g r ,n ,d r S;  S r ,n ,d ; ,P ,d ,n ,d ; ,m ,P ,d ,d S ; r r g r g r ,n ,d S ; r m m P ; m P d m ; P d n d m ; m g r ; g r ,n ,d S ; m P d S' ; S' r' r' S' ; S' r' g' r' g' r' n d d m P ; m P d S' ; P d n d m ; P d m g r ; g r ,n ,d S ; `,
+    komal_rishabh_asavari: `m P d S' ; r' n d m g r ; g r S;  S r m P d S' ; S' r' n d m P d m g r g r ,n ,d r S;  S r ,n ,d ; ,P ,d ,n ,d ; ,m ,P ,d ,d S ; r r g r g r ,n ,d S ; r m m P ; m P d m ; P d n d m ; m g r ; g r ,n ,d S ; m P d S' ; S' r' r' S' ; S' r' g' r' g' r' n d d m P ; m P d S' ; P d n d m ; P d m g r ; g r ,n ,d S ;`,
 
     khambavati: `S R m G m S ; R m P D ; n n D P D P ; m P D S' ; P D S' R' G' S'; R' n D S' ; D m P ; G m S ; R ,n ,D S; S R m P D S' ; S' n D P D ; m P ; G m S ; R ,n ,D S; R R m m P ; m P D n n D ; m P D S' ; D S' R' n n D ; P D m P ; m G m S ; S R ,n ,n ,D ; ,D S R m G S ; D m ; P G ; m S ; R ,n ,D S ; G R G S ;`,
 
@@ -280,7 +280,7 @@ var raag_phrases = {
     gunkali: `S r m P d ; P d m r ; r S ,d S ; m P d d S' ; d P d m ; P m r S ; S r m P d S'; S' d P m r r S ,d S; ,d ,d S ; r r S ; r m ; m m P m ; P P d m ; P m r ; r S ,d ,d S; m P d S' ; S' r' S' d P ; r' S' d P ; d m P d ; m r S ;`,
 
 
-    gorakh_kalyan: `S R m ; R m R S ,n ; ,n D S ; R m D n D S' ; S' n D m R ; m R S ,n ; ,n ,D R S; S R m D S' ; S' n D m R S ,n ; ,n ,D R S; S R m R S ,n ; ,D ,n ,D ,D S ; ,D S R ; R R m m R ; m m D ; n n D ; m D m R ; ,n ,D S ; S R m R ; m D S' ; S' R' R' S' n D ; m R (P)m R ; ,n ,D S ; S R ,n ,D S ; ,n S R m R ; R m D m ; m D n D ; m D S' ; n S' R' S' ; D n D m ; m (P)m ; R S ,n ; R ,n ,D S ;`,
+    gorakh_kalyan: `S R m ; R m R S ,n ; R m D n D S' ; S' n D m R ; m R S ,n ; ,n ,D R S; S R m D S' ; S' n D m R S ,n ; ,n ,D R S; S R m R S ,n ; ,D ,n ,D ,D S ; ,D S R ; R R m m R ; m m D ; n n D ; m D m R ; ,n ,D S ; S R m R ; m D S' ; S' R' R' S' n D ; m R (P)m R ; ,n ,D S ; S R ,n ,D S ; ,n S R m R ; R m D m ; m D n D ; m D S' ; n S' R' S' ; D n D m ; m (P)m ; R S ,n ; R ,n ,D S ;`,
 
     gauri_bhairav_ang: `S r S ,N S G r; m G r S r ,N S; S r ,N S; S r G m P d P; P d N S' ; S' N d P m G; r G m G r; S r ,N S; ,d ,N ,d S ,N S; S r G m G ; r G r m G r S r ,N S ; G m P d P ; P d N S' ; d N d S' N ; d P m P m d P m ; G r ; S r ,N S; G m P d P ; m P m d P m G ; m G m ; P P m G r G ; r G r m G r S ,N ; S r G m G;`,
 
@@ -313,7 +313,7 @@ var raag_phrases = {
     chhayanat: `,P R R ; R G m P ; G m R S ; S' P R G ; m G m R S R S; S R G R ; G P m G R S ; S R G m P D N S' ; S' N D P M P D P ; R G m P m G R S; R R G ; G m P m ; G m R ; R G m P ; P D P R ; R G m P ; m G m R S ; ,P ,P S ; ,P R S ; R G m P D P R ; R R G ; G G m ; P m G m R S ; ,P S R R S ; R G m P ; P D P ; P M D P P R ; G m P S' ; R' S' ; D D P ; D P M P ; R R G ; R G m P D P ; M P M P D P ; D N D P ; R G R S ; ,P S R R S ; R G m n D P ; R R S ;`,
     
     charukeshi: `,d ,n S R G m G R ; R G m d P ; R G m R S ; S R G m P d n S' ; S' n d P m G R S ,d ,n S ; m G R ; G R S ,n ,d S ; S R G m ; R G m R S ; G m d P ; m G R ; G m P d n S' ; G m d n ; n S' ; n S' R' S' d ; d n R' S' ; n S' n d P ; P d n d m ; G R G m R S ; ,n ,d ,n R S ; m P d n S' R' ; S' R' G' R' ; G' R' n d S' ; S' n d P d m G R ; G m d P ; G m R S ,n ,d ,n R S ;`,
-    chandrakauns: `S g m g S ,N ; ,N S ; g m d N S'; N d S' ; N d m g m g S ,N S; N ,d ,N S ; g m d N S' ; m d m N ; N S' G' S' N S' N ; N d ; m d N d m ; m g m g S ; m g S ,N ; S g m g S ; ,N ,N S;`,
+    chandrakauns: `S g m g S ,N ; ,N S ; g m d N S'; N d S' ; N d m g m g S ,N S; N ,d ,N S ; g m d N S' ; m d m N ; N S' g' S' N S' N ; N d ; m d N d m ; m g m g S ; m g S ,N ; S g m g S ; ,N ,N S;`,
 
     bilaskhani_todi: `S r ,n ,d S ; S r g ; r g P ; P d n d ; d m g r ; g r S ; S r g P d S' ; S' r' n d  P ; P d n d m g r ; r g r S ; S r g P ; d m g r ; g r g r S ; r ,n ,d S ; S r g P ; d n d P ; g P d S' ; S' r' n d ; d S' r' ; r' n S' r' g' ; g' r' n d ; P d n d m ; g r ; g r S ;`,
 
