@@ -140,7 +140,7 @@ var raag_phrases = {
 
     sundarkali: `S r G P n P ; G P n ; P G r S ; r S ,n S r S; S r G P n S' ; S' n P G ; P G r S ; S r G P ; P G P G r S ; G P n P ; P n S' ; S' r' S' n P G P ; G P n P G r S ; ,n S r S ;`,
 
-    suha_sughrai: `P n m P S' ; n n P m R S R (m)g ; g m R S ; n S ; (m)g (m)g m ; P n P ; P n m P S'; (Suha) or ,n S R m P ; P n P n S' ; S' P n P m P (m)g m R S ; (Suha) or S' n P m R S R (m)g m R S ;`,
+    suha_sughrai: `P n m P S' ; n n P m R S R (m)g ; g m R S ; n S ; (m)g (m)g m ; P n P ; P n m P S'; (Suha) ,n S R m P ; P n P n S' ; S' P n P m P (m)g m R S ; (Suha) or S' n P m R S R (m)g m R S ;`,
     
     sohani: `M D N S' r' S' ; N D N D ; S' r' S' r' N S' N D G M G ; S G M D N S' ; S' N D N D M G r S ; S ,N S G ; G M D N D G M G ; G M D N S' ; S' N r' S' r' N S ; S' r' S' r' N S' N D N D ; N D G M G ; G M D G M G r S ; S G M D N S' ;`,
 
@@ -207,7 +207,7 @@ var raag_phrases = {
 
     maru_bihag: `M G ; M G R S ; S ,N S ; m G P ; M G M G R S ; S G M P N S' ; S' N D P M G M G R S; ,N S G M G R S ; G M P N ; N S' ; S' N D P N S' D P ; M G M G R S ; S m m G ; P D P M ; G M G R S ;`,
 
-    maand: `G m P D S' N D; D P m; m P G R G S; G m P; P D S' N D; D d D P m m P m m G g G; D d D S'; S'N DP G m P; S R G S; S R m; m P; m P m m G; S R G S R S ,N ,D; ,D ,P ,N ,D ,P ,m; ,P ,D ,N ,P ,D S; S R m; m P G m P D N; P N D; m; G m P D N; P D S'; S' R' S' R' S' S' N D; D N S' N D P D; m P G; S R G S`,
+    maand: `G m P D S' N D; D P m; m P G R G S; G m P; P D S' N D; D d D P m m P m m G g G; D d D S'; S' N D P G m P; S R G S; S R m; m P; m P m m G; S R G S R S ,N ,D; ,D ,P ,N ,D ,P ,m; ,P ,D ,N ,P ,D S; S R m; m P G m P D N; P N D; m; G m P D N; P D S'; S' R' S' R' S' S' N D; D N S' N D P D; m P G; S R G S`,
 
     malkauns: `,d ,n S g m; g m n d m; d n S'; g’ S’ n d; S g m d n S' ; S' n d m g S; g g m ; ,d ,n S m ; g m g ; g m g S ; m m ; d d n n d m ; g g m g S ; ,n ,n S g ; S g m d m ; m d n d m ; g m d n; m d n ; n S' ; n n S' ; g' m' g' S' ; n S' d n d m ; g m g n ; n d ; d m g g m ; g S`,
 
