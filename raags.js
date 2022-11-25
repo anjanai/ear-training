@@ -176,7 +176,7 @@ var raag_phrases = {
 
     rageshree: `,n ,D ,n S ; G m R S ; G m D n D m ; G m R S; S G m D n S' ; S' n D m G m R S; S ,n ,D ,n S ; G m R ,n S ; G m D m ; D G m ; G m D n S' ; S' R' S' S' n D ; n D G m ; m G m R S ; D n S' ; D n S' R' S' n D ; m G R S ,n ,D ; ,D ,n S G m R S ;`,
 
-    poorvi: `S r G ; M G m G ; M d P ; N d P ; G M P ; M G m G r S ; S r G M P d N S' ; S' N d P ; M G m G r S ; S ,N ,d ,N r S ; S ,N S r G ; r m G ; G M P ; P M G m G ; r G M P ; d M P M G m (r)G ; G M d N S' ; S' N r N d P ; d M P G m (r)G ; r S ,N S r G ; r S ;`,
+    poorvi: `S r G ; M G m G ; M d P ; N d P ; G M P ; M G m G r S ; S r G M P d N S' ; S' N d P ; M G m G r S ; S ,N ,d ,N r S ; S ,N S r G ; r m G ; G M P ; P M G m G ; r G M P ; d M P M G m (r)G ; G M d N S' ; S' N r' N d P ; d M P G m (r)G ; r S ,N S r G ; r S ;`,
 
     puriya_kalyan: `,N r G M P M r G r S; M D P; M D N S';   S r G M P D N S'; S' N D P M G r G r S;  ,N r G; G M M G; M D P; M D N D P; P M D P M G; M r G; r S; M D M N; N D M D P; D N S' N D P; G M D N S' N; D N D S'; N S'; D N r' S'; N r' G'; G' M' G'; G' r' S'; N D N D P; P M D P; M N D M G; M P M G; P D M P M G G r r S; ,N,D ,M,D; ,N r S;`,
     
