@@ -212,7 +212,7 @@ var raag_phrases = {
     malkauns: `,d ,n S g m; g m n d m; d n S'; g’ S’ n d; S g m d n S' ; S' n d m g S; g g m ; ,d ,n S m ; g m g ; g m g S ; m m ; d d n n d m ; g g m g S ; ,n ,n S g ; S g m d m ; m d n d m ; g m d n; m d n ; n S' ; n n S' ; g' m' g' S' ; n S' d n d m ; g m g n ; n d ; d m g g m ; g S`,
 
 
-    miyan_malhar: `S R; R P; g g m R S; ,n D ,N ,N S; ,N S; m R P ; g m R S; m R P n D N S' ; S' n D n P; m P g g m R S;`,
+    miyan_malhar: `S R; R P; g g m R S; ,n ,D ,N ,N S; ,N S; m R P ; g m R S; m R P n D N S' ; S' n D n P; m P g g m R S;`,
 
     malgunji: `G m g R S ; ,n S ; ,D ,n S R G m ; S R G m D n S' ; S' n D P m G R G m g R S ; S ,D ,n S R G m ; m D n S' ; S' n D P m G m ; m g R S ; S ,n ,D ,n S R G m ; m D N S' ; S' R' S' R' n S' ; R' R' S' n D P ; n n D P m G R G m ; m g R S ;`,
 
