@@ -144,7 +144,7 @@ var raag_phrases = {
     
     sohani: `M D N S' r' S' ; N D N D ; S' r' S' r' N S' N D G M G ; S G M D N S' ; S' N D N D M G r S ; S ,N S G ; G M D N D G M G ; G M D N S' ; S' N r' S' r' N S ; S' r' S' r' N S' N D N D ; N D G M G ; G M D G M G r S ; S G M D N S' ;`,
 
-    sindhura: `R m P D ; n D P S' ; R' g' R' S' ; n D P m g R ; m g R S; S R m P D S' ; S' n D P m g R m g R S; S R m P ; D P m P D P m g R ; m g R S ; g R m P D S' ; S' R' S' ; S' n D P ; m P D P m g R ; m g R S ; m P N N S' ; g' R' n D S' ; m P D S' R' g' R' S' ; n D P m g R ; m g R S;`,
+    sindhura: `R m P D ; n D P S' ; R' g' R' S' ; n D P m g R ; m g R S; S R m P D S' ; S' n D P m g R m g R S; S R m P ; D P m P D P m g R ; m g R S ; g R m P D S' ; S' R' S' ; S' n D P ; m P D P m g R ; m g R S ; m P n n S' ; g' R' n D S' ; m P D S' R' g' R' S' ; n D P m g R ; m g R S;`,
 
     shyam_kalyan: `S R ,N S (m)R ; R M M P ; P G m R ; M P ; G m P ; G m R ; ,N S R S; ,N S R M P N S' ; S' N D P M P D P G m P G m R S ,N S; S ,N S R M P ; M P D P ; M P N S' ; S' R' S' N D P ; M P D P ; G m R ; ,N S R S ; P D P P S' S' R' S' ; S' R' S' D P M P ; R M P N S' ; N S' D D P ; S' N D P ; M P G m P ; G m R ; R ,N S;`,
 
