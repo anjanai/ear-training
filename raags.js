@@ -251,7 +251,7 @@ var raag_phrases = {
     jogeshwari: `S G m g S ; ,n ,D ; ,m ,D ,n S ; S G m ; n D m ; D n S' ; S' D ; n m ; D G ; m g S ; S G m D n S' ; S' n D m G m g S; ,D ,n ,D ,n S ,n g S ; S G G m ; m G m g S ; G m m D ; D m D G m ; m D n S' ; S' g' S' n D ; S' n D m ; n D m G ; D m G m g S ;`,
 
 
-    jhinjhoti: `,D S R m G ; R G S R ,n ,D ,P ,D S ; ,P ,D S R G m G ; m G R S ; R ,n ,D S ; S R m P D S' ; S' n D P m G R G S; ,P ,D S R m G ; m G S R ,n ,D ; ,P ,D S ; R m P D n D ; P D m G ; R G S R ,n ,D ; S ; R m P D n D ; P D S' ; S R' n D P ; D P m G ; m G R G S ;`,
+    jhinjhoti: `,D S R m G ; R G S R ,n ,D ,P ,D S ; ,P ,D S R G m G ; m G R S ; R ,n ,D S ; S R m P D S' ; S' n D P m G R G S; ,P ,D S R m G ; m G S R ,n ,D ; ,P ,D S ; R m P D n D ; P D m G ; R G S R ,n ,D ; S ; R m P D n D ; P D S' ; S' R' n D P ; D P m G ; m G R G S ;`,
 
     jayat: `P D P S'; S' P ; P D G P ; P G r S; S r G P D P S' ; S' P D P ; P D G P; P G r S; S r S ; S r G P G r S ; S G P ; P D P ; P D G P ; P G r S ; r G P ; G P G r S ; S G P ; P D G P ; P D P S' ; S' r' S' ; S' P ; P D P ; P D G P ; P G r S ;`,
 
