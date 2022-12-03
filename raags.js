@@ -194,7 +194,7 @@ var raag_phrases = {
 
     narayani: `S R ,n ,D ,P ; ,m ,P ,D S ; m R ; m R S ; S R P ; m P n D D P ; D P m R S ; S R m P D S' ; S' n D P m R S; S R P ; m P ; m P D n D S' ; m P D S' ; S' R' n D S' ; S' R' m' R' S' ; S' n D D P ; m P D P m R ; m R ,n ,D S ;`,
 
-    nand: `S G m D P R S ; G m P D N ; P D (P) m m P ; G m D P R S ; S G m D P R S ; G m P N S' ; S' D N P ; D M P G ; G m D P R S ; S G m D P R S ; G m P D N ; (D)P ; P D (P) m m P ; G m D P R S ; G m P N S ; P N R' N D P ; P D M P ; G m (D)P R S ; G m P D N P ; P D P M D P G m D P R S;`,
+    nand: `S G m D P R S ; G m P D N ; P D (P) m m P ; G m D P R S ; S G m D P R S ; G m P N S' ; S' D N P ; D M P G ; G m D P R S ; S G m D P R S ; G m P D N ; (D)P ; P D (P) m m P ; G m D P R S ; P N R' N D P ; P D M P ; G m (D)P R S ; G m P D N P ; P D P M D P G m D P R S;`,
     
     multani: `,N S ; M g ; M g P ; M g M g r S ; ,N S g M P N S' ; S' N d P M g r S ; S; ,N S M g ; (M)g (S)r S ; ,N S (M)g M P ; M P (M)g ; M g (S)r S ; g M P ; M P g ; M g P ; M d P ; P M g ; g M P N ; N d P ; g M P N S' ; S' g' (S')r' (N)S' ; N S' N d P ; P d M P ; g M g M g (S)r S ;`,
 
