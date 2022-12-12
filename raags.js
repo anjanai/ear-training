@@ -162,7 +162,7 @@ var raag_phrases = {
 
     shankara: `G P N D S' N ; D P G P ; R G R S ; S G P N D S' ; S' N P G ; P D P G ; P R G R S; ,N, ,N ,N S ; ,P ,N ,P S ; ,P ,N ,D S ; ,N ,N S ; ,P ,N S G ; G P G ; S G P G ; P D P P G ; P G ; G RS ; ,N S G G P ; P N D S' N ; N P ; G P N N S' ; S' R'S' N ; N D S' N P G ; P G R S;`,
 
-    shahana_kanada: `P m g m D ; D n P ; S' D n P ; D m P g m R S; ,n S ; R g m P ; m g m ; D n P ; m P D n S' ; S' D n P ; m P g m R S ; n S R g m ; m P m g m D ; D n P ; g m P D n S'; S' n D n P ; D m P S' ; n S' R' S'; S' n D n P ; m P g g m ; R S;`,
+    shahana_kanada: `P m g m D ; D n P ; S' D n P ; D m P g m R S; ,n S ; R g m P ; m g m ; D n P ; m P D n S' ; S' D n P ; m P g m R S ; ,n S R g m ; m P m g m D ; D n P ; g m P D n S'; S' n D n P ; D m P S' ; n S' R' S'; S' n D n P ; m P g g m ; R S;`,
     
     saraswati_kedar: `R M P D P ; M P m R S ; M P D n D P D S'; S' n D P M m R ; S ,n ,D S; S R M P D S' ; S' n D P ; M P D P ; M m R S; S R M M M P ; P D P n n ; D P D P M P m ; S R M P ; D S' n D P ; D M P ; D P m ; m S R R S M P D P S' ; M P D N S' ; D n D P ; D P M P m ; S R M P ; M P R M P D S' ; D n D P ; D S' R' S' ; n ; n D P ; P D P m ; M S' R' S' ; D S' R' S' ; n D P M ; P m S R R S`,
 
