@@ -72,7 +72,7 @@ var raag_scales = {
     madhukauns: "S g M P n",
     madhmad_sarang: "S R m P n",
     madhuvanti: "S R g M P D N",
-    malgunji: "S R g G m P D n",
+    malgunji: "S R g G m P D n N",
     miyan_malhar: "S R g m P D n N",
     malkauns: "S g m d n",
     maand: "S R g G m P d D N",
