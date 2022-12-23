@@ -222,7 +222,7 @@ var raag_phrases = {
 
     madhukauns: `S g M ; P M g M P ; M P n S' ; S' n P M ; g M g S; S g M P n S' ; S' n P M g S; S g S ; g M g S ; S g M P ; M P g M g ; g M P n P ; n M P ; P M g M g S ; g M P n S' ; n g' S' ; g' n S' ; S' n P M ; P M g M P n P ; n M P g M g ; M g S ;`,
 
-    lanka_dahan_sarang: `,N r G M d N S' - S' N d; M d M m; G M G r S; S R m P N S' ; S' n D P ; m P D P ; g R g R S ,N S; S ,N S ; ,N S R S ; R S ,n ,P ; ,m ,P ,n ,P S ; ,N S R ; ,N S R R P ; m m P ; R m P D P ; m P m n P ; S' D n P ; m P g R g R S ; ,n ,P ,m ,P ,N S ; R R m m P ; n P m P S' ; n P ; m P g R g R S ; ,N S R g R S ; R ,N S ; S R m P R g R S ; R m g R ; R D P ; P D P n D P ; R g R S ; ,n ,D ,P R S ;`,
+    lanka_dahan_sarang: `m P S' ; n P ; m P ; R g R S ; ,n ,P ,m ,P ,N S; S R m P N S' - S' n D P ; m P D P ; g R g R S ,N S; S R m P N S' ; S' n D P ; m P D P ; g R g R S ,N S; S ,N S ; ,N S R S ; R S ,n ,P ; ,m ,P ,n ,P S ; ,N S R ; ,N S R R P ; m m P ; R m P D P ; m P m n P ; S' D n P ; m P g R g R S ; ,n ,P ,m ,P ,N S ; R R m m P ; n P m P S' ; n P ; m P g R g R S ; ,N S R g R S ; R ,N S ; S R m P R g R S ; R m g R ; R D P ; P D P n D P ; R g R S ; ,n ,D ,P R S ;`,
 
     lalit: `,N r G m M m G r S ; G M d N d M m; r' N d M m; G m M m; G; M G r S; ,N r G M d N S' ; S' N d; M d M m; G M G r S`,
 
