@@ -12,7 +12,7 @@ var raag_scales = {
     basant_mukhari: "S r G m P d n",
     bhairav: "S r G m P d N",
     bhairavi: "S r g m P d n",
-    bhatiyar: "S r g m M P D N",
+    bhatiyar: "S r G m M P D N",
     bheem: "S R G m P D n",
     bheempalasi: "S R g m P D n",
     bhoop: "S R G P D",
@@ -296,7 +296,7 @@ var raag_phrases = {
 
     devshree: `R M P ; M P n P ; M R S; ,n ,P ,n S; S R M P n S' ; S' n P M R S; S R M R ; S ,n S R S; R M P ; M P n P ; M P n M P ; R M P ; M P n n S'; n S' R' S'; R' n S' ; n P M P ; M R S R ; ,n S; ,P ,n S ;`,
 
-    devgiri_bilawal: `,D ,N ,D S R G ; G R S ; ,D ,P G ; ,N R G m G ; G P m ; G R S ; S R G P D N S' - S' N D P ; D n D P ; m G R S ; ,N S ; ,D ,P G R S ; G R G ; G m G R S ; ,D ,P G R S ; S ,N R G m G ; G R G P ; P D N S' ; S' N D P ; D n D P ; m G R G R S ; ,N R G R S;`,
+    devgiri_bilawal: `,D ,N ,D S R G ; G R S ; ,D ,P G ; ,N R G m G ; G P m ; G R S ; S R G P D N S' ; S' N D P ; D n D P ; m G R S ; ,N S ; ,D ,P G R S ; G R G ; G m G R S ; ,D ,P G R S ; S ,N R G m G ; G R G P ; P D N S' ; S' N D P ; D n D P ; m G R G R S ; ,N R G R S;`,
     dev_gandhar: `,d ,n S R G m G m ; d m P n d P ; d m P g R S ; R G m ; P g R S ; d m P g R G m g R S ; S R G m P m g R G m P d n S' ; S' n d P m P g R G m g R S; R ,n ; S R G m ; g R ; G m ; m m P ; d m P ; g r G m ; n d P ; Pd dP m P g R G m g R S R ,n ; S R G M ; R G m P ; m ; m P d d n n S' ; R' n d P ; d P g R ; R G m g R ; R S m P S' ; S' R' G' m' ; m' g' R' S' ; R' n ; n d P ; d P m g ; R ; G m ; m g R ; G m g R S;`,
 
     desi: `R m P ; D m P S' ; S' P D m P ; R g S R ,n S; S R m P n S' ; S' P D m P R g S R ,n S; S R ,n S ; ,n S R m P ; m P D m P ; R g S R ,n S ; R m P g R ; m P D P ; D m P S' ; m P n S' ; S' P D m P ; m P D m P g R ; R m g R g R S R ,n S ;`,
