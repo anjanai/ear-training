@@ -180,7 +180,7 @@ var raag_phrases = {
 
     puriya_kalyan: `,N r G M P M r G r S; M D P; M D N S';   S r G M P D N S'; S' N D P M G r G r S;  ,N r G; G M M G; M D P; M D N D P; P M D P M G; M r G; r S; M D M N; N D M D P; D N S' N D P; G M D N S' N; D N D S'; N S'; D N r' S'; N r' G'; G' M' G'; G' r' S'; N D N D P; P M D P; M N D M G; M P M G; P D M P M G G r r S; ,N,D ,M,D; ,N r S;`,
     
-    puriya_dhanashri: `,N r G M P ; P M G M r G ; M d P ; M d N S'; N r' ; N d P ; P d P P M G M r G ; r S; ,N r S ; ,N r G M P ; M d N S' ; S' N d P M G M r G r S; ,N r G ; G M G ; M P d P d M P ; M G M r G ; G r M G r S ; ,N r S ,N r G ; G M M G r G r G M P ; M g M r ; r G ; r G M P d P d M P ; P d P M G ; M r G ; ,N r M G r G ; r S ; ,d ,N r G ; M d N S' ; S' N r' S' ; r' N d P ; P d P M d P ; d P M G M r G r S ; P d P M G M d N S' ; N r' S' ; d N r' G' G' r' S' ; N r' N d ; P d P M ; G M r G ; r G M P d P M ; G M r G r S `,
+    puriya_dhanashri: `,N r G M P ; P M G M r G ; M d P ; M d N S'; N r' ; N d P ; P d P P M G M r G ; r S; ,N r S ; ,N r G M P ; M d N S' ; S' N d P M G M r G r S; ,N r G ; G M G ; M P d P d M P ; M G M r G ; G r M G r S ; ,N r S ,N r G ; G M M G r G r G M P ; M G M r ; r G ; r G M P d P d M P ; P d P M G ; M r G ; ,N r M G r G ; r S ; ,d ,N r G ; M d N S' ; S' N r' S' ; r' N d P ; P d P M d P ; d P M G M r G r S ; P d P M G M d N S' ; N r' S' ; d N r' G' G' r' S' ; N r' N d ; P d P M ; G M r G ; r G M P d P M ; G M r G r S `,
 
     puriya: `N r G ; G M D G M G ; N M G ; G M G r S ; ,N ,M ,D S ; ,N r G r S ; ,N r G M D N S' ; S' N D M ; G M D ; G M G r S; ,N r G ; G r ,N ,D ,N ; ,N ,M ,D S ; G M D N ; N M G ; G M D G M G ; r S ; G M D N D S' ; N r' N M G ; G M D G M G r S;`, 
 
