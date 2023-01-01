@@ -187,7 +187,7 @@ var raag_phrases = {
 
     pilu: `G m P N S' ; n D P ; m P N d P ; m g R S ; P g R S ,N ; S g R S ; S G m P N S' ; S' n D P m g R S ; ,N S g R S ; S; g R S ,N ; ,m ,P ,N S g R S ; S ,N ,d ,P ; ,P ,N S g ; g m P (m)g ; g (R)S ,N ; S ; S G ; G m g (R)S ; S G m P ; n D P ; G m D P g R S ,N ; S ,N S R ; S ,N ,D ,P ; ,m ,P ,N ,N S ;`,
 
-    parameshwari: `S r g m D m ; g m D m g r ; g r ,n ,d ; ,d ,n r S ; S r g m D n S' ; S' n D m g r S; S r g m ; g m D m ; m D n S' ; D n r' S' ; S' n D m ; m g r; g r ,n ,D ; ,D ,n r S ;`,
+    parameshwari: `S r g m D m ; g m D m g r ; g r ,n ,D ; ,d ,n r S ; S r g m D n S' ; S' n D m g r S; S r g m ; g m D m ; m D n S' ; D n r' S' ; S' n D m ; m g r; g r ,n ,D ; ,D ,n r S ;`,
 
     nayaki_kanada: `R ,n S R P (m)g ; g m P m R S R S ; g m n P ; n m P (m)g m P m R S R R S; m P n P S'; P n P; g m R S;
  S R (m)g m P n P S' ; S' n P n P m P (m)g g m R S ; R P ; m n P ; S R ,n S R P g m ; g m P m R S R S ; S R R g m ; m n P ; m P n P m P S' ; m P n S' ; S' n P n P ; n n P m P n n P m P ; g m P m R S R S ;`,
