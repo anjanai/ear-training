@@ -230,7 +230,7 @@ var raag_phrases = {
 
     khambavati: `S R m G m S ; R m P D ; n n D P D P ; m P D S' ; P D S' R' G' S'; R' n D S' ; D m P ; G m S ; R ,n ,D S; S R m P D S' ; S' n D P D ; m P ; G m S ; R ,n ,D S; R R m m P ; m P D n n D ; m P D S' ; D S' R' n n D ; P D m P ; m G m S ; S R ,n ,n ,D ; ,D S R m G S ; D m ; P G ; m S ; R ,n ,D S ; G R G S ;`,
 
-    khamaj: `G m P D; G m G; P S' N S'; n D p; m P m G; R S; S G m P D N S' ; S' n D P m G R G S ,N S G m P; ,N S G m P; P D; m P m G; G m P D N S'; N S' P; P D P S'; S' n D P; D P m P D P m G m; P m G R; G S; S G m P; G m P D; P n D P; P D P n D P m G; m P G m G R G S; S' R' S' S' n D P; m P m m G R G S; ,n ,D S;`,
+    khamaj: `G m P D; G m G; P S' N S'; n D P; m P m G; R S; S G m P D N S' ; S' n D P m G R G S ,N S G m P; ,N S G m P; P D; m P m G; G m P D N S'; N S' P; P D P S'; S' n D P; D P m P D P m G m; P m G R; G S; S G m P; G m P D; P n D P; P D P n D P m G; m P G m G R G S; S' R' S' S' n D P; m P m m G R G S; ,n ,D S;`,
 
     kausi_kanada: `g m d P ; m g R ; g m S ; g m P m g R ; g S ,d ,n R S; ,n S g m d n S' ; S' n d P m g R g m R S; ,n ,n S ; ,d ,n ,n ,d ; ,n S R R S ; ,n S R S ,d ,d ,n S g ; S g m ; m P ; m g m ; R S ; g ; m P m g m ; n d P m ; m d n S' ; n d n d ; P m g m ; m P g g m R S ; S' n d n ; d P ; P m ; P m g m P ; g P m ; g m g S ; ,d ,n R S;`,
 
@@ -361,7 +361,7 @@ var raag_phrases = {
     kafi: `g R ; m P ; m P D P ; D n S' ; n D P ; S R m P ; D m P g R ; D P  m P  m P  g R ; R g  m P  R g  R ; n D P m g R ; n D ; m P D n P D S' ; S' n D P m P D P g R ; P m g R m g R S;`,
     bhoop: `G R G; P G; D P; S' D P G; P G R G; G R S;  S ,D S R G ; R G S R ,D S ; S R G P ; P G R G ; R P G ; G S R ; R ,D S ; G R G ; P G ; P D P P ; D P ; G P R G R S ,D S ; S R G R G P D S' ; P D P S' ; S' S' ; R' S' D S' ; D S' R' G' R' S' ; D S' D P G R G ; P R G R S ; R ,D S `,
 
-    patdeep: `g m P N S' D P ; m g m P N N N S' ; D P m g m P ; P g m ; g R S ,N ,N S; N S ; g m P ; m g R S ;  g m P D P ; g m P N S' ; N S' D P ; D P m g m g ; m P m g m g R S`,
+    patdeep: `g m P N S' D P ; m g m P N N N S' ; D P m g m P ; P g m ; g R S ,N ,N S; ,N S ; g m P ; m g R S ;  g m P D P ; g m P N S' ; N S' D P ; D P m g m g ; m P m g m g R S`,
 
     bairagi: `m P n P m r ; r P m r S ; ,n S r S ; ,n S r m P n ; m n P ; n P m P m r ; ,n S ; r m P n P ; m P n n S' ; n P n S' r' S' ; r' S' n r' S' n P m ; P m r S ; ,n S r S ;`,
 
