@@ -130,7 +130,7 @@ var raag_phrases = {
 
     tilang_bahar: `m P m g ; m ; n P m ; P N S' ; g m P m g m R S; S R S m ; G m P n P ; m D N S' ;S' n P m g m R S; G m ; G m P m ; G m R S ; m D N S' ; D N S' R' S' ; S' ,n P m G ; m P m ; D N S' nP G m R S ;`,
     
-    tilang: `G m P n P m G ; n P G m G ; S G m P N S' ; S' n P m G S; ,N S ; ,P ,n ,P ; ,P ,n ,P S ; ,N S ; ,P ,N S G ; G m P n ; m P N N S' ; P N S' ; P N S' G' R' S' ; P N S' G' G'm' m' P' G' S' ; N S' S n P ; m ; P m G m ; G S ,N S;`,
+    tilang: `G m P n P m G ; n P G m G ; S G m P N S' ; S' n P m G S; ,N S ; ,P ,n ,P ; ,P ,n ,P S ; ,N S ; ,P ,N S G ; G m P n ; m P N N S' ; P N S' ; P N S' G' R' S' ; P N S' G' G' m' m' P' G' S' ; N S' S n P ; m ; P m G m ; G S ,N S;`,
 
     tilak_kamod: `,P ,N S R G S ; R P m G ; S R G S ,N ; S R m P S’ ; S’ R’ G’ S’ ; S’ P D m G ; S R m G ; S R G S ,N ; ,P ,N S R G S ; S R m P N S’ ; S’ P D m G ; S R G S ,N ; ,P ,N S R G S ;  ,P ,N S R G S ,N ; S R P m G ; S R G S ,N ; S’ P ; D m G ; S R G S ,N ; S R m P D ; m P S’ ; S’ P D m G ; S’ P n D m G ;  P n D P ; D m G ; S R G S ,n ;`, 
 
