@@ -114,7 +114,7 @@ var raag_scales = {
     sundarkauns: "S g m D n",
     surdasi_malhar: "S R m P D n N",
     tilak_kamod: "S R G m P D n N",
-    tilang: "S G m P n N",
+    tilang: "S R G m P n N",
     tilang_bahar: "S R g G m P n N",
     todi: "S r g M P d N",
     vachaspati: "S R G M P D n",
