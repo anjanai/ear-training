@@ -200,7 +200,7 @@ var raag_phrases = {
 
     mohankauns: `S G m g S ; ,n ,d ; ,n S ; S m G ; m d n d m G ; m G g S; S G m d n S' ; S' n d m g S; S ,n ,d ; ,d ,n S ; S G G m ; G m g S ; G m d m ; d n S' ; S' g' S' n d m G ; m n d m G ; m d G ; m g S ;`,
 
-    megh_malhar: `,n S R P m R ; m P m R ; m P ; P m n P m R ; R R P m R R S ,n S; S (m)R m P ,n S' ; S' n P m R S; R ,n S ; S ,n ; ,n ,n ,P ; ,P ,n S ; ,P ,n ,P S ; ,P ,n S (m)R ; ,n S (m)R ; (m)R (m)R P ; (m)R m m (m)R ; (m)R S ; ,n P ,n S ; ,n S (m)R m P n P ; m P S' ; P n S' ; P n P S' ; P n S' R' ; R' R' S' ; S' R' S' S' R' S'; n P ; m P n P (m)R S ; ,n S ; (m)R P m R ; R m P n n P ; n n P m R ; R P m n P ; n S' ; n P m R ; ,n R S ;`,
+    megh_malhar: `,n S R P m R ; m P m R ; m P ; P m n P m R ; R R P m R R S ,n S; S (m)R m P ,n S ; S' n P m R S; R ,n S ; S ,n ; ,n ,n ,P ; ,P ,n S ; ,P ,n ,P S ; ,P ,n S (m)R ; ,n S (m)R ; (m)R (m)R P ; (m)R m m (m)R ; (m)R S ; ,n ,P ,n S ; ,n S (m)R m P n P ; m P S' ; P n S' ; P n P S' ; P n S' R' ; R' R' S' ; S' R' S' S' R' S'; n P ; m P n P (m)R S ; ,n S ; (m)R P m R ; R m P n n P ; n n P m R ; R P m n P ; n S' ; n P m R ; ,n R S ;`,
 
     marwa: `S ; ,N ,D S ,N r ; r G M D ; D M G r ; ,N ,D r S ; S ,D ,N r G M D N S' ; S' N D M G r S ; ,N ,D S ,N r S  ;N ,D ,N r ; G M D ; M G r ; ,N ,D r S ; M D ; M D S' ; S' D N r' N D ; M D ; M G r ; G r ,N ,D r S ;`,
 
