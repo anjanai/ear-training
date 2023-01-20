@@ -241,7 +241,7 @@ var raag_phrases = {
     kamod: `S (m)R R P ; G m P G m R S ; S' R' S' ; D D P ; m R P ; D M P ; G m R S; S R P ; G m R S ; m R P ; D N S' ;S' N D P ; M P D P ; G m P ; G m R S; S m R P ; R R P G m P G m R S ; M P D P ; G m D D P ; G m P G m R S ; P D P S' S' R' S' ; S' R' S' S' D D P ; M P D M P ; G m P G m R S ;`,
 
 
-    jogkauns: `G m ; G m P m ; G m d N S' ; S' N d ; P d n d m P m ; G m (S)g S ;S G m d N S' - S' N d P m ; P d n d P m ; G m (S)g S ;S G m (S)g S ; S G m P m ; G m N d ; d N S' ; S' g' S' N d ; P d n d P m ; m P m G m g S ; m d N S' ; g' S' N d ; d n d p m ; G m P m G m (S)g S ;`,
+    jogkauns: `G m ; G m P m ; G m d N S' ; S' N d ; P d n d m P m ; G m (S)g S ;S G m d N S' - S' N d P m ; P d n d P m ; G m (S)g S ;S G m (S)g S ; S G m P m ; G m N d ; d N S' ; S' g' S' N d ; P d n d P m ; m P m G m g S ; m d N S' ; g' S' N d ; d n d P m ; G m P m G m (S)g S ;`,
 
     jogiya: `r m m ; m P d ; P d N d P ; P d m r S; S r m P d S' ; S' N d P ; m m r S ; S r S ,d S ; S r m ; m P ; P m r S ; r S ,d S ; r m P ; m P d S' ; S' (N)d P ; m P d (n)d m ; m r S ; ,d S ;`,
 
