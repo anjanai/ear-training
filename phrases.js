@@ -104,12 +104,13 @@ $(document).ready(function () {
 	$("#raag-select").append(new Option(raag, raag));
 	raag_phrases[raag] = raag_phrases[raag].replace(/’/g,"'")
 	    .replace(/\([^)]*\) */g, "")
+	    .replace(/-/g, "")
 	    .split(';')
 	    .filter(a => a!="")
 	    .map(a => a.trim().split(/\s+/)
 		);
     }
-    //console.log(raag_phrases["gopika_basant"][10]);
+    //console.log(raag_phrases["jogkauns"]);
 
     $("#datemod").html(document.lastModified);
     
