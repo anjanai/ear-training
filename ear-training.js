@@ -102,6 +102,7 @@ function next() {
 }
 
 function playnote(note) {
+    console.log (note, notemap[note]);
     sampler.triggerAttackRelease(notemap[note], "2n");
 
 }
