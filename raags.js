@@ -284,7 +284,7 @@ var raag_phrases = {
 
     gauri_bhairav_ang: `S r S ,N S G r; m G r S r ,N S; S r ,N S; S r G m P d P; P d N S' ; S' N d P m G; r G m G r; S r ,N S; ,d ,N ,d S ,N S; S r G m G ; r G r m G r S r ,N S ; G m P d P ; P d N S' ; d N d S' N ; d P m P m d P m ; G r ; S r ,N S; G m P d P ; m P m d P m G ; m G m ; P P m G r G ; r G r m G r S ,N ; S r G m G;`,
 
-    gaud_sarang: `S G R m G P R S ; m G P ; D P S' ; S' D P m G ; G R m G P R S ; S G R m G D P N D S' ; ,N S G R m G; P M D M P S' ; S' N D P M P D P G R m G P R S ; S' N D P M P m G ; m g R m G P R S; S G R m G P R S ; G R m G ; P N D N D P m G ; G m P N S' ; S' ; D P m G ; M P M P ; G R m G ; P D P P ; S' R' S' S' ; S' N D P m G ; R G R m G ; P R S ;`,
+    gaud_sarang: `S G R m G P R S ; m G P ; D P S' ; S' D P m G ; G R m G P R S ; S G R m G D P N D S' ; ,N S G R m G; P M D M P S' ; S' N D P M P D P G R m G P R S ; S' N D P M P m G ; m G R m G P R S; S G R m G P R S ; G R m G ; P N D N D P m G ; G m P N S' ; S' ; D P m G ; M P M P ; G R m G ; P D P P ; S' R' S' S' ; S' N D P m G ; R G R m G ; P R S ;`,
 
     gaud_malhar: `S R G m ; R G m G m ; G R G (R)S ; m P D n P ; m P D N S' ; S R G m ; R P ; m P D N S' ; S' n D n P m ; G R G (R)S ; R G m ; S R G m ; m R ; m R (m)R P ; m P D (n)P ; m P D N S' ; R' S' D n P ; D P m G P m ; P ; P N D N S' ; S' D P m ; m R (m)R ; P ; G P m ; S R G m ; G R G m ; G R G (R)S ;`,
     
