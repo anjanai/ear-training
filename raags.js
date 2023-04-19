@@ -128,7 +128,7 @@ var raag_phrases = {
     todi: `,N S r g ; M r g ; r S; S r g M P d N S' ; S' N d P M g r S; S r r S ; r r g r S ; ,d ,d ,N ,N S ; r r g r S ; S r g M P ; P M d P ; M d N ; M d N S' ; S' r' g' r' g' r' S' ; S' N d ; N d P ; M d N d M g r S ;`,
 
 
-    tilang_bahar: `m P m g ; m ; n P m ; P N S' ; g m P m g m R S; S R S m ; G m P n P ; m D N S' ;S' n P m g m R S; G m ; G m P m ; G m R S ; m D N S' ; D N S' R' S' ; S' ,n P m G ; m P m ; D N S' n P G m R S ;`,
+    tilang_bahar: `m P m g ; m ; n P m ; P N S' ; g m P m g m R S; S R S m ; G m P n P ; m D N S' ;S' n P m g m R S; G m ; G m P m ; G m R S ; m D N S' ; D N S' R' S' ; S' n P m G ; m P m ; D N S' n P G m R S ;`,
     
     tilang: `G m P n P m G ; n P G m G ; S G m P N S' ; S' n P m G S; ,N S ; ,P ,n ,P ; ,P ,n ,P S ; ,N S ; ,P ,N S G ; G m P n ; m P N N S' ; P N S' ; P N S' G' R' S' ; P N S' G' G' m' m' P' G' S' ; N S' S' n P ; m ; P m G m ; G S ,N S;`,
 
