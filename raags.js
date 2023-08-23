@@ -153,7 +153,7 @@ var raag_phrases = {
     
     shuddha_kalyan: `G R G ; R S ; ,N ,D ,P ; G R S ; G R G ; P R S ; S R G P D S' ; S' N D P M G R S ; G R G P R S; S ; ,N ,D ; ,N ,D ,P ; ,P ,D S ; S ; G R S ; ,D ,P G ; R G ; S R ; S ,N ,D S ; G R G P R S ; S R G P M G ; R G P D P ; S' D S' ; S' N D ; P M G ; R G R S ; G R G P R S ;`,
 
-    shree: `S ,N r ; r r P ; M Pd M G r G r S ; M P N S' r' ; r' N d P ; M d M G r ; G r S ; S r M P N S' ; S' r' N d P M P d M G r S; S ,N r M P ; P r r P ; M P d M G r ; r P r G r S ; M P N ; N S' ; M P N S' r' ; r' S' r' N d P ; P M P d M G r ; G r P r G r S ;`,
+    shree: `S ,N r ; r r P ; M P d M G r G r S ; M P N S' r' ; r' N d P ; M d M G r ; G r S ; S r M P N S' ; S' r' N d P M P d M G r S; S ,N r M P ; P r r P ; M P d M G r ; r P r G r S ; M P N ; N S' ; M P N S' r' ; r' S' r' N d P ; P M P d M G r ; G r P r G r S ;`,
 
     shobhavari: `R m P ; d P m R m ; P d P m R S ; S R m P d S' ; S' d P m R S ; ,d S ; S R m ; R m P ; m P d ; P d m ; R m P d S' ; d S' R' S' d ; S' d P d m ; d P m P ; m P d d P ; P d m ; P m R m ; R S R ,d S ; R m d P m R S ;`,
 
