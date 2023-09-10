@@ -22,8 +22,6 @@ function popupNotes () {
 $(document).ready(function () {
     initTanpura();
     remove_notes = localStorage.getItem('removeNotes');
-    console.log (remove_notes);
-    if (remove_notes === null) remove_notes = 'r,g,M,d,n'.split(',');
     
     $('.popupCloseButton').click(function(){
         $('.hover_bkgr_subset').hide();
@@ -53,14 +51,14 @@ $(document).ready(function () {
 	$("#popup_swaras").append(b);
     }
 
-    console.log (remove_notes);
-    //remove_notes = remove_notes.split(',');
     jQuery.each(remove_notes, function(i, id) {
 	if (!id) return;
 	$("#"+id).hide();
 	$("#A"+id).removeClass("popup_swar").addClass("swar_remove");
     });
 
+    //$("#instru-select").append(new Option("aaa", 1));
+    add_instruments();
     
 });
 
@@ -73,8 +71,7 @@ function tanpura() {
     tanpura[tanpura.paused ? 'play' : 'pause']();
 }
 
-
-const sampler = new Tone.Sampler({
+salamander = {
     urls: {
 	A4: "A4.mp3",
 	C4: "C4.mp3",
@@ -82,8 +79,19 @@ const sampler = new Tone.Sampler({
 	'F#4': "Fs4.mp3",
     },
     baseUrl: "https://tonejs.github.io/audio/salamander/"
-}).toDestination();
+};
 
+
+//sampler = new Tone.Sampler(salamander).toDestination();
+
+sampler = new Tone.Sampler(samples[13]).toDestination();
+sampler.volume.value = -4; // reduce the volume, files are too loud!
+
+
+function changeInstrument(val) {
+    delete (sampler);
+    sampler = new Tone.Sampler(samples[val]).toDestination();
+}
 
 function start() {
     $("#repeat").show();
