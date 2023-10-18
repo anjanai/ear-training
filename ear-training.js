@@ -82,11 +82,10 @@ salamander = {
 };
 
 
-//sampler = new Tone.Sampler(salamander).toDestination();
+sampler = new Tone.Sampler(salamander).toDestination();
 
-sampler = new Tone.Sampler(samples[13]).toDestination();
+//sampler = new Tone.Sampler(samples[13]).toDestination();
 sampler.volume.value = -4; // reduce the volume, files are too loud!
-
 
 function changeInstrument(val) {
     delete (sampler);
