@@ -140,7 +140,7 @@ var raag_phrases = {
 
     sundarkali: `S r G P n P ; G P n ; P G r S ; r S ,n S r S; S r G P n S' ; S' n P G ; P G r S ; S r G P ; P G P G r S ; G P n P ; P n S' ; S' r' S' n P G P ; G P n P G r S ; ,n S r S ;`,
 
-    suha_sughrai: `P n m P S' ; n n P m R S R (m)g ; g m R S ; n S ; (m)g (m)g m ; P n P ; P n m P S'; (Suha) ,n S R m P ; P n P n S' ; S' P n P m P (m)g m R S ; (Suha) or S' n P m R S R (m)g m R S ;`,
+    suha_sughrai: `P n m P S' ; n n P m R S R (m)g ; g m R S ; n S ; (m)g (m)g m ; P n P ; P n m P S'; (Suha) ,n S R m P ; P n P n S' ; S' P n P m P (m)g m R S ; S' n P m R S R (m)g m R S ;`,
     
     sohani: `M D N S' r' S' ; N D N D ; S' r' S' r' N S' N D G M G ; S G M D N S' ; S' N D N D M G r S ; S ,N S G ; G M D N D G M G ; G M D N S' ; S' N r' S' r' N S ; S' r' S' r' N S' N D N D ; N D G M G ; G M D G M G r S ; S G M D N S' ;`,
 
