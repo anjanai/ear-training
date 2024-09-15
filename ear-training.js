@@ -100,7 +100,10 @@ function start() {
 
 function next() {
     $("#quiz").children().css('background-color', 'beige');
-    let active = srgm.filter(x => !remove_notes.includes(x));
+    console.log (srgm, remove_notes);
+    let active = srgm;
+    if (remove_notes)
+	active = srgm.filter(x => !remove_notes.includes(x));
     lastnote = active[Math.floor(Math.random() * active.length)];
     playnote(lastnote);
     num_total++;
